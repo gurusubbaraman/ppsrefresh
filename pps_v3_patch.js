@@ -2051,3 +2051,145 @@ makeRow('Sources:', [
     setTimeout(init, 2000);
   }
 })();
+
+/* ============================================================ */
+/* SESSION_1C2_LOADED — Chidambaram Full Anchor-Level Content   */
+/* ============================================================ */
+(function(){
+  window.SESSION_1C2_LOADED = true;
+  console.log('[Session 1C.2] Loading Chidambaram anchor-level content...');
+
+  if (!window.TEMPLE_ENRICHMENT) window.TEMPLE_ENRICHMENT = {};
+
+  // Sthala Purana - English (~750 words, anchor-level depth)
+  var sthalaEn = "Chidambaram Nataraja Temple, located in Tamil Nadu near Cuddalore, is one of the most theologically foundational Shaiva shrines in India — the Akasha (Space) Sthalam among the five Pancha Bhoota temples that represent the five great elements. The temple's traditional name, Chidambaram Thillai Nataraja-koothan Kovil, combines two Sanskrit-Tamil words: 'chit' (consciousness) and 'ambaram' (space/ether/atmosphere), meaning 'the atmosphere of wisdom' or 'the space of consciousness.' This etymology encodes the temple's central teaching: Shiva is not a form to be worshipped but the very fabric of empty space in which all form arises and dissolves. The 40-acre temple complex is a masterwork of Dravidian architecture, featuring four towering gopurams (gateway towers) adorned with the 108 karanas — the classical dance poses codified in Bharata Muni's Natyashastra — making Chidambaram a living encyclopedia of Indian performing arts inscribed in stone.\n\nThe primary sthala purana centers on Sri Nataraja's Ananda Tandavam (Dance of Bliss). According to the Chidambara Mahatmya (a section of the Skanda Purana), the site of Chidambaram was once a dense forest of Thillai trees (Excoecaria agallocha) where a group of rishis practiced Karma Kanda ritualism, believing that rituals alone could compel divine grace. Shiva, disguised as Bhikshatana (a mendicant), entered the Thillai forest accompanied by Vishnu in the form of Mohini. The sages' wives were enchanted by their beauty. Enraged, the rishis performed rituals to invoke serpents, which Shiva donned as ornaments; then a fierce tiger, whose skin became his garment; then an elephant, which Shiva ripped and devoured. Finally, they summoned the demon Muyalakan — the personification of ignorance and arrogance. Shiva stepped upon Muyalakan's back and began the Ananda Tandavam, revealing his true form as Nataraja. The sages surrendered, realizing that rituals cannot control the divine. This cosmic dance, witnessed by the two great sages Vyaghrapada (tiger-footed sage) and Patanjali (author of the Yoga Sutras), established Nataraja iconography's canonical form: Shiva dancing in a ring of fire (prabhamandala), one leg raised in urdhva-tandavam, one crushing Muyalakan underfoot, with damaru (drum of creation) in his upper right hand and fire (agni, destruction) in his upper left.\n\nThe second sthala purana concerns Manickavasakar's moksha. Having defeated Buddhist scholars in Sri Lanka through his mastery of Shaiva Siddhanta philosophy, Manickavasakar returned to Chidambaram, pointed to the Nataraja idol, and merged directly into the divine form — attaining moksha not through progressive stages but by direct dissolution into the very consciousness he had spent his life invoking. His compositions, the Thiruvasagam and Thirukkovaiyar, are among the most philosophically dense Tamil Shaiva works and are recited daily in the temple.\n\nThe third sthala purana concerns the temple's cosmology. The sanctum houses the celebrated Chit Sabha (Hall of Consciousness), where the Chidambara Rahasyam (the Secret of Chidambaram) is preserved behind a curtain. Behind the curtain lies not an idol but empty space — the Akasha Lingam — signifying that Shiva is not a form to be seen but the very field of empty space in which all form appears. This is Advaita Vedanta given architectural expression: the ultimate divine is beyond all form. Adjacent to the Chit Sabha is the Kanaka Sabha (Golden Hall), where the Nataraja and Sivakami idols receive daily worship. Aditya Chola I (871-907 CE) gilded the interior of the Kanaka Sabha, and Parantaka Chola I (901-953 CE) enriched the temple with the wealth of his conquests.\n\nThe fourth layer concerns the temple's exceptional priestly tradition. The 3000 Thillai Vazh Andhanar (also called Thillai Dikshitars, Thillai Muvayiravar, or the Three Thousand of Thillai) are Vedic Shaiva Brahmins who trace their origin to sage Patanjali's induction. They wear their sacred tuft (kudumi) at the front of the head — a practice unique among Tamil Brahmins, shared only with the Namboothiris of Kerala. Every married male Dikshitar serves in rotating turns as chief priest, performing six daily poojas: the day begins at 7:00 AM with the Lord's padukas being brought from the palliyarai, and the last pooja (Arthajaama pooja at 10:00 PM) is performed with special fervor, during which the priest reveals the Chidambara Rahasyam behind the curtain. Today about 360 Dikshitar families continue this tradition, unbroken since the 12th century Sekkizhar's Periya Puranam documented their service.\n\nChidambaram is celebrated by all four Naalvar (Sambandar, Appar, Sundarar, Manickavasakar) and additional Nayanmars including Nandanar (whose Chidambaram moksha through purification-by-fire is a foundational Shaiva narrative on divine access transcending social hierarchy), Kootruva Nayanar (Chola chieftain refused ritual coronation), and Thirunilakanta Kuyavar (potter devotee). The temple uniquely houses the Govindaraja Perumal shrine (Sri Vaishnava counterpart to Nataraja worship) within its complex, making Chidambaram one of the very few temples where Shaiva and Sri Vaishnava traditions coexist in ritual proximity — a rare theological configuration. The Arudra Darshan festival in Margazhi (December-January) marks Nataraja's cosmic dance and draws hundreds of thousands of devotees; the Chittirai and Aani Uttiram festivals feature the Chariot procession (Ratha Yatra). For over twelve centuries, Chidambaram has stood as the theological, ritual, and philosophical heart of Tamil Shaivism — the eternal Hall where consciousness dances.";
+
+  // Sthala Purana - Tamil (matching depth composition)
+  var sthalaTa = "தமிழ்நாட்டில் கடலூருக்கு அருகில் அமைந்துள்ள சிதம்பரம் நடராஜர் திருக்கோயில் இந்தியாவின் மிக இறையியல் ரீதியில் அடிப்படையான ஶைவ ஆலயங்களில் ஒன்று — ஐந்து பஞ்ச பூத ஆலயங்களில் ஆகாய தத்துவத்தை பிரதிநிதித்துவப்படுத்தும் ஆகாய ஸ்தலம். இக்கோயிலின் பாரம்பரிய பெயரான 'சிதம்பரம் தில்லை நடராஜர் கூத்தன் கோயில்' இரண்டு சொற்களை இணைக்கிறது: 'சித்' (உணர்வு) மற்றும் 'அம்பரம்' (வெளி/ஆகாசம்/வளிமண்டலம்), 'ஞான ஆகாசம்' அல்லது 'உணர்வின் வெளி' என்று பொருள். இச்சொற்பிறப்பியல் கோயிலின் மைய போதனையை குறிக்கிறது: ஶிவன் வழிபடத்தக்க வடிவம் அல்ல; அவர் அனைத்து வடிவங்களும் தோன்றி மறையும் வெற்று வெளியின் அடிப்படை உண்மை. 40 ஏக்கர் பரப்பளவில் விரிந்திருக்கும் இக்கோயில் திராவிட கட்டிடக்கலையின் தலைசிறந்த படைப்பு. நான்கு உயர்ந்த கோபுரங்கள் பரத முனிவரின் நாட்யசாஸ்திரத்தில் விவரிக்கப்பட்ட 108 கரணங்களால் (செம்மைப்படுத்தப்பட்ட நடன அசைவுகள்) அலங்கரிக்கப்பட்டுள்ளன — சிதம்பரம் இந்திய நடன கலைகளின் கல்-எழுத்து இயக்கமாக நிற்கிறது.\n\nமூல ஸ்தல புராணம் ஶ்ரீ நடராஜரின் ஆனந்த தாண்டவத்தை மையமாக்கியது. ஸ்கந்த புராணத்தின் சிதம்பர மகாத்மியப் பகுதியின்படி, சிதம்பரம் ஒருகாலத்தில் தில்லை மரங்களின் (எக்ஸ்கோகேரியா அகல்லோகா) அடர்ந்த வனமாக இருந்தது. அங்கே கர்ம காண்ட சடங்கியலில் நம்பிக்கை கொண்ட ஒரு முனிவர் குழு வாழ்ந்து வந்தது — சடங்குகள் மட்டுமே தெய்வீக அருளை பெற போதுமானது என்று நம்பினர். ஶிவன் பிக்ஷாடனராக (துறவி) மாறி, விஷ்ணு மோஹினியாக, தில்லை வனத்திற்குள் நுழைந்தனர். முனிவர்களின் மனைவிகள் அவர்களின் அழகில் மயங்கினர். கோபமடைந்த முனிவர்கள் பாம்புகளை உருவாக்கும் சடங்கை செய்தனர். ஶிவன் அவற்றை ஆபரணமாக அணிந்து கொண்டார். பின்னர் ஒரு புலியை உருவாக்கினர். ஶிவன் அதன் தோலை உரித்து ஆடையாக அணிந்தார். பின்னர் ஒரு யானையை உருவாக்கினர். ஶிவன் அதை கிழித்து விழுங்கினார். இறுதியில், அவர்கள் அறியாமையின் வடிவமாகிய முயலகன் என்ற அசுரனை எழுப்பினர். ஶிவன் அமைதியாக முயலகனின் முதுகில் மிதித்து ஆனந்த தாண்டவம் ஆடி — நடராஜராகிய தமது உண்மையான வடிவத்தை வெளிப்படுத்தினார். முனிவர்கள் சரணடைந்து, சடங்குகள் தெய்வத்தை கட்டுப்படுத்த முடியாது என்பதை உணர்ந்தனர். இந்த பிரபஞ்ச நடனத்தை வியாக்ரபாதர் (புலிக்கால் முனிவர்) மற்றும் பதஞ்சலி (யோக சூத்திரங்களின் ஆசிரியர்) ஆகிய இரு மகா முனிவர்கள் கண்டு களித்தனர். இதுவே நடராஜரின் தனித்துவமான வடிவத்தை நிலைப்படுத்தியது: அக்னி மண்டலத்தில் நடனமாடும் ஶிவன், ஒரு காலை ஊர்த்வ தாண்டவத்தில் தூக்கி, மற்றொன்றால் முயலகனை மிதித்து, மேல் வலது கையில் டமருகம் (படைப்பின் ஒலி), மேல் இடது கையில் அக்னி (அழிவு).\n\nஇரண்டாம் ஸ்தல புராணம் மாணிக்கவாசகரின் முக்திய கதை. இலங்கையில் புத்த மத அறிஞர்களை ஶைவ சித்தாந்த தத்துவத்தினால் வென்ற பிறகு, மாணிக்கவாசகர் சிதம்பரம் திரும்பினார். நடராஜரை சுட்டிக்காட்டி அதில் நேரடியாக கரைந்து முக்தி அடைந்தார் — படிப்படியான நிலைகள் மூலம் அல்ல, தமது வாழ்நாள் முழுவதும் தியானித்த உணர்வில் நேரடியாக கரைந்து. அவரது இயற்றங்களான திருவாசகம் மற்றும் திருக்கோவையார் தமிழ் ஶைவ பாரம்பரியத்தின் மிக ஆழமான தத்துவ படைப்புகளில் ஒன்று. இவை இக்கோயிலில் தினமும் ஓதப்படுகின்றன.\n\nமூன்றாம் ஸ்தல புராணம் கோயிலின் பிரபஞ்சவியலைச் சார்ந்தது. கருவறையில் புகழ்பெற்ற சித் சபை (உணர்வின் சபை) அமைந்துள்ளது. அங்கே சிதம்பர ரகஸ்யம் — கோயிலின் மிக பெரிய இரகஸ்யம் — திரையின் பின் பாதுகாக்கப்படுகிறது. திரையின் பின் தெய்வ சிலை இல்லை — வெற்று வெளியே உள்ளது. இதுவே ஆகாய லிங்கம். ஶிவன் காணப்பட வேண்டிய வடிவம் அல்ல, அனைத்து வடிவங்களும் தோன்றும் வெளியின் தத்துவமே ஶிவன் என்பதை இது குறிக்கிறது. இது அத்வைத வேதாந்தத்தின் கட்டிடக்கலை வெளிப்பாடு. சித் சபைக்கு அருகில் கனக சபை (பொன்னம்பலம்) அமைந்துள்ளது. அங்கே நடராஜ மற்றும் சிவகாமியின் திருஉருவங்கள் தினசரி வழிபாட்டைப் பெறுகின்றன. ஆதித்திய சோழர் I (871-907 CE) கனக சபையின் உள்பகுதியை பொன் முலாம் பூசினார். பரந்தக சோழர் I (901-953 CE) தமது வெற்றிச் செல்வத்தால் கோயிலை செழுமைப்படுத்தினார்.\n\nநான்காம் அடுக்கு கோயிலின் அசாதாரண பூசாரி பாரம்பரியத்தைச் சார்ந்தது. 3000 தில்லை வாழ் அந்தணர் (தில்லை தீக்ஷிதர், தில்லை மூவாயிரவர், தில்லையின் மூவாயிரம் என்றும் அழைக்கப்படுவர்) என்பவர்கள் வேத ஶைவ பிராமணர்கள். அவர்கள் தமது தோற்றத்தை பதஞ்சலி முனிவரின் தீக்ஷைக்குக் கண்டறிகிறார்கள். அவர்கள் தலையின் முன்பகுதியில் குடுமி வைத்திருக்கிறார்கள் — தமிழ் பிராமணர்களில் இது தனித்துவமான பழக்கம், கேரள நம்பூதிரிகளுடன் மட்டுமே பகிர்ந்து கொள்ளப்பட்டது. திருமணமான ஒவ்வொரு தீக்ஷிதரும் சுழற்சி முறையில் தலைமை பூசாரியாக பணியாற்றுகிறார். தினமும் ஆறு பூஜைகள்: காலை 7:00 மணிக்கு பாதுகைகள் பள்ளியறையிலிருந்து கொண்டு வரப்பட்டு தொடங்கும், இரவு 10:00 மணியில் அர்த்தஜாம பூஜையுடன் முடியும். அப்போது தீக்ஷிதர் திரையை விலக்கி சிதம்பர ரகஸ்யத்தை வெளிப்படுத்துகிறார். இன்று சுமார் 360 தீக்ஷிதர் குடும்பங்கள் இப்பாரம்பரியத்தை நிலைநிறுத்துகின்றனர். 12-ம் நூற்றாண்டு சேக்கிழாரின் பெரிய புராணத்தில் இவர்களது சேவை ஆவணப்படுத்தப்பட்டதிலிருந்து இப்பரம்பரை உடையாமல் தொடர்கிறது.\n\nசிதம்பரம் நான்கு நாலாவர் (சம்பந்தர், அப்பர், சுந்தரர், மாணிக்கவாசகர்) அனைவராலும் கொண்டாடப்படுகிறது. கூடுதலாக நந்தனார் (தமது சிதம்பரம் முக்தி மூலம் ஶைவ பாரம்பரியத்தில் சாதி வெல்லும் தெய்வீக அணுகல் கதை), கூற்றுவ நாயனார் (சடங்கு முடிசூட்டல் மறுக்கப்பட்ட சோழ தலைவர்), திருநீலகண்ட குயவர் (குயவர் பக்தர்) உள்ளிட்ட பல நாயன்மார்களால் வணங்கப்படுகிறது. இக்கோயில் தமது வளாகத்திற்குள் கோவிந்தராஜ பெருமாள் ஆலயத்தை (நடராஜர் வழிபாட்டிற்கு ஶ்ரீ வைஷ்ணவ இணை) கொண்டுள்ளது. இது சிதம்பரத்தை ஶைவ மற்றும் ஶ்ரீ வைஷ்ணவ பாரம்பரியங்கள் சடங்கு ரீதியில் அருகிலிருந்து செயல்படும் ஒரு சில கோயில்களில் ஒன்றாக ஆக்குகிறது — ஒரு அரிய இறையியல் அமைப்பு. மார்கழி மாத ஆருத்ரா தரிசன விழா நடராஜரின் பிரபஞ்ச நடனத்தைக் கொண்டாடி நூற்றுக்கணக்கான ஆயிரம் பக்தர்களை ஈர்க்கிறது. சித்திரை மற்றும் ஆனி உத்திர விழாக்களில் ரத யாத்ரா (தேர் ஊர்வலம்) நடைபெறுகிறது. பன்னிரண்டு நூற்றாண்டுகளுக்கும் மேலாக, சிதம்பரம் தமிழ் ஶைவத்தின் இறையியல், சடங்கு மற்றும் தத்துவ மையமாக நிற்கிறது — உணர்வு நடனமாடும் நித்திய சபை.";
+
+  // Store the full enrichment
+  window.TEMPLE_ENRICHMENT[3] = {
+    // Bilingual sthala purana (~750 words each)
+    sthala_purana_en: sthalaEn,
+    sthala_purana_ta: sthalaTa,
+
+    // Goddess
+    goddess_en: "Sivakami Amman",
+    goddess_ta: "சிவகாமி அம்மன்",
+
+    // Theertham (renamed from Pushkarini in display)
+    pushkarini_en: "Sivaganga Theertham (also called Paramananda Kupa, Vyaghrapada Theertham)",
+    pushkarini_ta: "சிவகங்கை தீர்த்தம் (பரமானந்த குபம், வியாக்ரபாத தீர்த்தம் என்றும் அழைக்கப்படுகிறது)",
+
+    // Sthala Vriksha - RICH STRUCTURE
+    sthala_vriksha: {
+      common_name_en: "Thillai",
+      common_name_ta: "தில்லை",
+      scientific_name: "Excoecaria agallocha",
+      description_en: "The Thillai (Excoecaria agallocha), also known as the milky mangrove, blinding tree, or river poison tree, is a mangrove species belonging to the Euphorbiaceae family. It grows up to 15 meters tall in saline or brackish coastal wetlands. Its milky latex is highly toxic — contact with eyes can cause temporary blindness, giving rise to its scientific name (from Latin 'excoecare' meaning 'to blind'). In ancient times, dense forests of Thillai trees surrounded the Chidambaram area, which is why the temple's traditional name is Chidambaram Thillai Nataraja-koothan Kovil.",
+      description_ta: "தில்லை (எக்ஸ்கோகேரியா அகல்லோகா), 'பால் மங்ரோவ்' அல்லது 'குருடாக்கும் மரம்' என்றும் அழைக்கப்படும் இது யூஃபோர்பியேசி குடும்பத்தை சேர்ந்த மங்ரோவ் இனம். உப்புநீர் அல்லது கார நீர்நிலைகளில் 15 மீட்டர் உயரம் வரை வளரும். இதன் பால் நிற பசை மிகுந்த விஷத் தன்மை கொண்டது — கண்களில் பட்டால் தற்காலிக குருட்டுத்தன்மை ஏற்படலாம். இதன் அறிவியல் பெயர் லத்தீன் 'excoecare' (குருடாக்குதல்) என்பதிலிருந்து பெறப்பட்டது. முற்காலத்தில், தில்லை மரங்களின் அடர்ந்த வனங்கள் சிதம்பரம் பகுதியை சூழ்ந்திருந்தன. அதனால்தான் கோயிலின் பாரம்பரியப் பெயர் 'சிதம்பரம் தில்லை நடராஜர் கூத்தன் கோயில்'.",
+      significance_en: "The Thillai tree gives Chidambaram its ancient name 'Thillai Ambalam' (the Hall of Thillai) and 'Perumpatrapuliyur' (Great Thillai Grove). Temple sculptures depicting Thillai trees date to the 2nd century CE. Though the once-vast Thillai forests around Chidambaram no longer exist (the environment having changed over centuries), the Thillai trees still grow abundantly in the nearby Pichavaram wetlands — the second largest mangrove forest in the world, which extends toward the temple area. Legend holds that the sages performing rituals when Shiva danced the Ananda Tandavam dwelt in this Thillai forest, making the tree inseparable from the theological narrative of the temple.",
+      significance_ta: "தில்லை மரம் சிதம்பரத்திற்கு அதன் பழம்பெயரான 'தில்லை அம்பலம்' (தில்லையின் சபை) மற்றும் 'பெரும்பற்றப்புலியூர்' (பெரிய தில்லை காடு) என்ற பெயர்களை அளிக்கிறது. கோயிலின் சிற்பங்களில் தில்லை மரங்கள் 2-ம் நூற்றாண்டு CE முதல் காணப்படுகின்றன. ஒரு காலத்தில் சிதம்பரத்தை சூழ்ந்திருந்த பெரிய தில்லை வனங்கள் இப்போது இல்லை என்றாலும் (சுற்றுச்சூழல் நூற்றாண்டுகளாக மாறியிருப்பதால்), அருகிலுள்ள பிச்சாவரம் நீர்நிலைகளில் — உலகின் இரண்டாவது பெரிய மங்ரோவ் காடு — தில்லை மரங்கள் இன்னும் ஏராளமாக வளர்கின்றன. இது கோயில் பகுதி வரை நீள்கிறது. ஶிவன் ஆனந்த தாண்டவம் ஆடிய போது சடங்குகள் செய்து கொண்டிருந்த முனிவர்கள் இதே தில்லை வனத்தில் வாழ்ந்தனர் என்று புராணம் கூறுகிறது. இதனால் தில்லை மரம் கோயிலின் இறையியல் கதைச் சொல்லலில் இருந்து பிரிக்க முடியாதது."
+    },
+
+    // Size
+    size_acres: 40,
+
+    // Festivals
+    festivals_en: [
+      "Arudra Darshan / Margazhi Thiruvadhirai (December-January) — the primary festival marking Nataraja's cosmic dance",
+      "Chittirai Ther (April-May) — the Chariot Festival with grand procession",
+      "Aani Thirumanjanam (June-July) — sacred abhisheka festival",
+      "Aani Uttiram (June-July) — the second Chariot Festival",
+      "Panguni Uttiram (March-April) — celestial wedding festival",
+      "Aadi Pooram (July-August) — Sivakami's incarnation day",
+      "Natyanjali Dance Festival (February-March) — dance offering by classical dancers"
+    ],
+    festivals_ta: [
+      "ஆருத்ரா தரிசனம் / மார்கழி திருவாதிரை (டிசம்பர்-ஜனவரி) — நடராஜரின் பிரபஞ்ச நடனத்தை கொண்டாடும் முதன்மை விழா",
+      "சித்திரை தேர் (ஏப்ரல்-மே) — கம்பீரமான ஊர்வலத்துடன் தேர் விழா",
+      "ஆனி திருமஞ்சனம் (ஜூன்-ஜூலை) — புனித அபிஷேக விழா",
+      "ஆனி உத்திரம் (ஜூன்-ஜூலை) — இரண்டாவது தேர் விழா",
+      "பங்குனி உத்திரம் (மார்ச்-ஏப்ரல்) — திருக்கல்யாண விழா",
+      "ஆடி பூரம் (ஜூலை-ஆகஸ்ட்) — சிவகாமியின் அவதார தினம்",
+      "நடாஞ்சலி நடன விழா (பிப்ரவரி-மார்ச்) — செம்மொழி நடனக் காணிக்கை விழா"
+    ],
+
+    town_ta: "சிதம்பரம்",
+    coords_verified: true,
+
+    // Nayanmar associations (rich, with roles + stories)
+    nayanmar_associations: [
+      {
+        nayanmar: "manickavasakar",
+        role: "moksha_place",
+        brief_en: "Manickavasakar's direct moksha into Nataraja",
+        brief_ta: "மாணிக்கவாசகரின் நடராஜரில் நேரடி முக்தி",
+        story_en: "Having defeated Buddhist scholars in Sri Lanka through his mastery of Shaiva Siddhanta philosophy, Manickavasakar returned to Chidambaram. He pointed to the Nataraja idol and merged directly into the divine form — attaining moksha not through progressive stages but by direct dissolution into the very consciousness he had spent his life invoking. His Thiruvasagam and Thirukkovaiyar compositions are recited daily in the temple.",
+        story_ta: "இலங்கையில் புத்த மத அறிஞர்களை ஶைவ சித்தாந்த தத்துவத்தினால் வென்ற பிறகு, மாணிக்கவாசகர் சிதம்பரம் திரும்பினார். நடராஜரை சுட்டிக்காட்டி அதில் நேரடியாக கரைந்து முக்தி அடைந்தார் — படிப்படியான நிலைகள் மூலம் அல்ல, தமது வாழ்நாள் முழுவதும் தியானித்த உணர்வில் நேரடியாக கரைந்து. அவரது திருவாசகம் மற்றும் திருக்கோவையார் இயற்றங்கள் இக்கோயிலில் தினமும் ஓதப்படுகின்றன."
+      },
+      {
+        nayanmar: "nandanar",
+        role: "moksha_place",
+        brief_en: "Nandanar's Chidambaram moksha through fire",
+        brief_ta: "நெருப்பின் மூலம் நந்தனாரின் சிதம்பரம் முக்தி",
+        story_en: "Nandanar, the dalit devotee (also called Thirunalaipovar) whose caste barred him from temple entry, longed to see Nataraja. Through a purification-by-fire ritual, he emerged with a Brahminical form and gained entry to the sanctum. Upon seeing Nataraja, he merged with the deity and attained moksha. His story is a foundational Shaiva narrative on divine access transcending social hierarchy — the deity welcomes the devotee's inner purity regardless of external classification.",
+        story_ta: "சாதி காரணமாக ஆலய நுழைவு தடுக்கப்பட்ட தலித் பக்தரான நந்தனார் (திருநாலைப்போவர் என்றும் அழைக்கப்படுவர்) நடராஜரைக் காண ஆசைப்பட்டார். நெருப்பின் வழியாக செல்லும் தூய்மைப்படுத்தும் சடங்கை பூர்த்தி செய்த பிறகுதான் ஆலயத்தில் நுழைய அனுமதிக்கப்பட்டார். நடராஜரைக் கண்டவுடன், அவரோடு இணைந்து முக்தி அடைந்தார். அவரது கதை சாதி வேறுபாட்டையும் தாண்டிய தெய்வீக அணுகல் என்ற ஶைவ பாரம்பரியத்தின் அடிப்படை கதை — தெய்வம் பக்தரின் உள் தூய்மையை வெளிப்புற வகைப்பாட்டைப் பொருட்படுத்தாமல் வரவேற்கிறார்."
+      },
+      {
+        nayanmar: "thillai_andanar",
+        role: "devotee",
+        brief_en: "The 3000 Thillai Vazh Andanar priests",
+        brief_ta: "3000 தில்லை வாழ் அந்தணர்கள்",
+        story_en: "The 3000 Thillai Vazh Andanar (also called Thillai Dikshitars) are collectively counted as one Nayanar. They are Vedic Shaiva Brahmins who trace their induction to Sage Patanjali. Every married male Dikshitar becomes a hereditary trustee and archaka of the Nataraja temple, wearing his sacred tuft at the front of the head — a practice unique in Tamil Brahmin tradition, shared only with Kerala Namboothiris. They serve in rotating turns as chief priest performing six daily poojas. Their continuous service since at least the 12th century (Sekkizhar's Periya Puranam) makes them one of the longest unbroken priestly lineages in world religion.",
+        story_ta: "3000 தில்லை வாழ் அந்தணர்கள் (தில்லை தீக்ஷிதர் என்றும் அழைக்கப்படுவர்) கூட்டாக ஒரு நாயனாராகக் கருதப்படுகிறார்கள். இவர்கள் வேத ஶைவ பிராமணர்கள் — பதஞ்சலி முனிவரின் தீக்ஷையிலிருந்து தமது வம்சாவளியை கண்டறிகிறார்கள். திருமணமான ஒவ்வொரு தீக்ஷிதரும் நடராஜர் திருக்கோயிலின் பரம்பரை அறங்காவலராகவும் அர்ச்சகராகவும் ஆகிறார். தலையின் முன்பகுதியில் குடுமி வைத்திருக்கிறார்கள் — தமிழ் பிராமணர்களிடையே இது தனித்துவமான பழக்கம், கேரள நம்பூதிரிகளுடன் மட்டுமே பகிர்ந்து கொள்ளப்பட்டது. சுழற்சி முறையில் தலைமை பூசாரியாக பணியாற்றி தினமும் ஆறு பூஜைகள் செய்கிறார்கள். குறைந்தபட்சம் 12-ம் நூற்றாண்டு (சேக்கிழாரின் பெரிய புராணம்) முதல் அவர்களது தொடர்ச்சியான சேவை உலக மதத்தில் மிக நீண்ட உடையாத பூசாரி பரம்பரைகளில் ஒன்றாக அவர்களை ஆக்குகிறது."
+      },
+      {
+        nayanmar: "kootruva",
+        role: "devotee",
+        brief_en: "Kootruva Nayanar — Chola chieftain refused coronation",
+        brief_ta: "கூற்றுவ நாயனார் — முடிசூட்டப்பட மறுக்கப்பட்ட சோழ தலைவர்",
+        story_en: "Kootruva Nayanar, a Chola chieftain who conquered vast territory, sought the Thillai Dikshitars to formally crown him at Chidambaram. The Dikshitars declined, saying that they were entitled to crown only Sembiyan (true Chola) lineage kings. Rather than force them, they departed to the Chera country. Kootruva's story emphasizes that ritual legitimacy comes from divine sanction, not military conquest — a foundational statement on the theological separation of temporal and spiritual authority.",
+        story_ta: "பரந்த பகுதிகளை வென்ற சோழ தலைவரான கூற்றுவ நாயனார், சிதம்பரத்தில் தமக்கு முறையாக முடிசூட்டும்படி தில்லை தீக்ஷிதர்களை கேட்டார். செம்பியன் (உண்மையான சோழ) வம்சாவளி மன்னர்களுக்கு மட்டுமே தாம் முடிசூட்ட உரிமையுடையவர்கள் என்று கூறி தீக்ஷிதர்கள் மறுத்தனர். வலுக்கட்டாயப்படுத்தாமல், அவர்கள் சேர நாட்டிற்குச் சென்றுவிட்டனர். கூற்றுவனின் கதை சடங்கு அங்கீகாரம் ராணுவ வெற்றியிலிருந்து அல்ல, தெய்வீக ஒப்புதலிலிருந்து வருகிறது என்பதை வலியுறுத்துகிறது — உலகிய அதிகாரத்திற்கும் ஆன்மிக அதிகாரத்திற்கும் இடையிலான இறையியல் பிரிவினை பற்றிய அடிப்படை அறிக்கை."
+      }
+    ],
+
+    // Cross-tradition links
+    cross_tradition_en: [
+      { tradition: "sri_vaishnava", story: "The Govindaraja Perumal shrine stands within the Chidambaram Nataraja Temple complex — a Sri Vaishnava counterpart to Nataraja worship. This is one of the very few temples where Shaiva and Sri Vaishnava traditions coexist in ritual proximity. Sri Ramanujar visited Chidambaram and engaged in theological discussions here about the primacy of Vishnu worship. The Govindaraja shrine represents the theological affirmation that Shiva and Vishnu are not competing deities but different faces of the same ultimate reality." },
+      { tradition: "shakta", story: "The Sivakami Amman shrine within the complex represents the Shakta dimension. Sivakami is the female consort of Nataraja and represents Adi Shakti (primordial energy). Chidambaram houses one of the earliest known Amman (Devi) shrines in South India, establishing the equal significance of the goddess in the Shaiva tradition." },
+      { tradition: "pancha_bhoota", story: "Chidambaram is one of the five Pancha Bhoota Sthalams, representing the element of Akasha (space/ether) — the most subtle of the five great elements. The formless Chidambara Rahasyam within the sanctum represents the formless divine — pure space as the most subtle presence, showing that Shiva is not a form to be seen but the very field of empty space in which all form appears." },
+      { tradition: "vaidika", story: "The 3000 Thillai Vazh Andhanar are Vedic Shaiva Brahmins who follow Vedic rituals (rather than Agamic rituals of Sivachariyars). Their unbroken tradition since at least the 12th century represents one of the longest continuous Vedic ritual lineages in the world. The temple's daily worship is conducted in Sanskrit Vedic mantras alongside Tamil Panniru Thirumurai hymns, showing the harmonious integration of Sanskrit and Tamil Shaiva traditions." },
+      { tradition: "other", story: "The temple houses 108 karanas (classical dance poses) from Bharata Muni's Natyashastra, making Chidambaram a foundational site for the entire Bharatanatyam dance tradition. The Natyanjali Dance Festival held here draws classical dancers from all over India offering their art as devotional worship — a rare cultural-devotional confluence." }
+    ],
+    cross_tradition_ta: [
+      { tradition: "sri_vaishnava", story: "சிதம்பரம் நடராஜர் திருக்கோயில் வளாகத்திற்குள் கோவிந்தராஜ பெருமாள் ஆலயம் அமைந்துள்ளது — நடராஜர் வழிபாட்டிற்கு ஶ்ரீ வைஷ்ணவ இணை. ஶைவ மற்றும் ஶ்ரீ வைஷ்ணவ பாரம்பரியங்கள் சடங்கு அருகாமையில் இணைந்து செயல்படும் ஒரு சில கோயில்களில் இதுவும் ஒன்று. ஶ்ரீ ராமானுஜர் சிதம்பரத்திற்கு வந்து விஷ்ணு வழிபாட்டின் முதன்மை பற்றி இறையியல் கலந்துரையாடல்களில் ஈடுபட்டார். கோவிந்தராஜ ஆலயம் ஶிவனும் விஷ்ணுவும் போட்டி தெய்வங்கள் அல்ல, ஒரே இறுதி உண்மையின் வெவ்வேறு முகங்கள் என்ற இறையியல் உறுதிப்பாட்டைக் குறிக்கிறது." },
+      { tradition: "shakta", story: "வளாகத்திற்குள் சிவகாமி அம்மன் ஆலயம் ஶாக்த பரிமாணத்தை பிரதிநிதித்துவப்படுத்துகிறது. சிவகாமி நடராஜரின் பெண் துணைவர் மற்றும் ஆதி சக்தியை (ஆதி ஆற்றல்) பிரதிநிதித்துவப்படுத்துகிறார். சிதம்பரத்தில் தென்னிந்தியாவில் அறியப்பட்ட மிகப் பழமையான அம்மன் (தேவி) ஆலயங்களில் ஒன்று உள்ளது. இது ஶைவ பாரம்பரியத்தில் தேவியின் சம முக்கியத்துவத்தை நிலைநாட்டுகிறது." },
+      { tradition: "pancha_bhoota", story: "சிதம்பரம் பஞ்ச பூத ஸ்தலங்களில் ஒன்று — ஆகாய தத்துவத்தை (வெளி/எதர்) பிரதிநிதித்துவப்படுத்துகிறது — ஐந்து பூதங்களில் மிக நுட்பமானது. கருவறையில் உள்ள வடிவமற்ற சிதம்பர ரகஸ்யம் வடிவமற்ற தெய்வீகத்தை பிரதிநிதித்துவப்படுத்துகிறது — தூய வெளி மிக நுட்பமான இருப்பாக, ஶிவன் காணப்பட வேண்டிய வடிவம் அல்ல, அனைத்து வடிவங்களும் தோன்றும் வெற்று வெளியின் தத்துவமே என்பதை காட்டுகிறது." },
+      { tradition: "vaidika", story: "3000 தில்லை வாழ் அந்தணர்கள் வேத ஶைவ பிராமணர்கள். அவர்கள் வேத சடங்குகளை பின்பற்றுகிறார்கள் (ஶிவாசார்யர்களின் ஆகம சடங்குகளுக்கு பதிலாக). குறைந்தபட்சம் 12-ம் நூற்றாண்டு முதலான அவர்களது உடையாத பாரம்பரியம் உலகின் மிக நீண்ட தொடர்ச்சியான வேத சடங்கு பரம்பரைகளில் ஒன்றைக் குறிக்கிறது. கோயிலின் தினசரி வழிபாடு தமிழ் பன்னிரு திருமுறை பாசுரங்களுடன் சேர்ந்து சமஸ்கிருத வேத மந்திரங்களில் நடத்தப்படுகிறது — சமஸ்கிருத மற்றும் தமிழ் ஶைவ பாரம்பரியங்களின் இணக்கமான ஒருங்கிணைப்பைக் காட்டுகிறது." },
+      { tradition: "other", story: "கோயில் பரத முனிவரின் நாட்யசாஸ்திரத்திலிருந்து 108 கரணங்களை (செம்மொழி நடன அசைவுகள்) வைத்திருக்கிறது. இது சிதம்பரத்தை முழு பரதநாட்டிய பாரம்பரியத்திற்கும் அடிப்படை தளமாக ஆக்குகிறது. இங்கே நடத்தப்படும் நடாஞ்சலி நடன விழா செம்மொழி நடனக்காரர்களை தமது கலையை பக்தி வழிபாடாக அர்ப்பணிக்க இந்தியா முழுவதிலுமிருந்து ஈர்க்கிறது — ஒரு அரிய கலாச்சார-பக்தி இணைப்பு." }
+    ]
+  };
+
+  console.log('[Session 1C.2] Chidambaram (sno 3) enrichment loaded with anchor-level content.');
+  console.log('[Session 1C.2] Sthala Purana length: ' + sthalaEn.length + ' chars (English), ' + sthalaTa.length + ' chars (Tamil)');
+  console.log('[Session 1C.2] Sthala Vriksha: Thillai (Excoecaria agallocha) with full description + significance');
+  console.log('[Session 1C.2] Nayanmar associations: 4 (Manickavasakar, Nandanar, Thillai Andanar, Kootruva)');
+  console.log('[Session 1C.2] Cross-tradition links: 5 (Sri Vaishnava, Shakta, Pancha Bhoota, Vaidika, Other)');
+  console.log('[Session 1C.2] Festivals: 7 (bilingual)');
+
+  // If panel is currently showing Chidambaram, re-render to show new content
+  setTimeout(function() {
+    if (typeof window.showTempleInPanel === 'function') {
+      var panel = document.getElementById('detail-panel');
+      var contentDiv = document.getElementById('detail-panel-content');
+      if (panel && panel.classList.contains('has-content') && contentDiv) {
+        var nameEl = contentDiv.querySelector('.dp-name');
+        if (nameEl && nameEl.textContent.indexOf('#3') !== -1) {
+          window.showTempleInPanel(3);
+          console.log('[Session 1C.2] Re-rendered current Chidambaram panel with new content');
+        }
+      }
+    }
+  }, 500);
+})();
