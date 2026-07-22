@@ -2603,3 +2603,170 @@ makeRow('Sources:', [
     }
   }, 500);
 })();
+
+/* ============================================================ */
+/* SESSION_1C5A_LOADED — Naalvar override mechanism + fixes     */
+/* ============================================================ */
+(function(){
+  window.SESSION_1C5A_LOADED = true;
+  console.log('[Session 1C.5a] Loading Naalvar override mechanism + Madurai/Rameswaram fixes...');
+
+  if (!window.TEMPLE_ENRICHMENT) window.TEMPLE_ENRICHMENT = {};
+
+  // ============================================================
+  // Add naalvar_present array to enrichments for temples where
+  // the base saints field is incomplete. Format: 
+  // naalvar_present: ["sambandar", "appar", "sundarar", "manickavasakar"]
+  // Only include the Naalvar who actually sang/celebrated the temple.
+  // ============================================================
+
+  // Chidambaram - all 4 Naalvar
+  // (Manickavasakar attained moksha here - direct connection)
+  if (!window.TEMPLE_ENRICHMENT[3]) window.TEMPLE_ENRICHMENT[3] = {};
+  window.TEMPLE_ENRICHMENT[3].naalvar_present = ["sambandar", "appar", "sundarar", "manickavasakar"];
+
+  // Rameswaram - 3 Naalvar (Sambandar 3.111, Appar 5.83, Sundarar 7.79)
+  // Manickavasakar did not sing Rameswaram
+  if (!window.TEMPLE_ENRICHMENT[205]) window.TEMPLE_ENRICHMENT[205] = {};
+  window.TEMPLE_ENRICHMENT[205].naalvar_present = ["sambandar", "appar", "sundarar"];
+
+  // Madurai Meenakshi Sundareswarar - all 4 Naalvar
+  // Sambandar 3.120, Appar 5.83 (Thiruvaalavai), Sundarar (7.72 Thiruthondar Thogai references Nayanmars of Madurai),
+  // Manickavasakar (chief minister to Pandya king, life connected to Madurai; Thiruvasagam compositions)
+  if (!window.TEMPLE_ENRICHMENT[201]) window.TEMPLE_ENRICHMENT[201] = {};
+  window.TEMPLE_ENRICHMENT[201].naalvar_present = ["sambandar", "appar", "sundarar", "manickavasakar"];
+
+  console.log('[Session 1C.5a] Naalvar overrides set:');
+  console.log('  Chidambaram (3): 4 of 4');
+  console.log('  Rameswaram (205): 3 of 4');
+  console.log('  Madurai Meenakshi (201): 4 of 4');
+
+  // ============================================================
+  // Override the badge fix logic to use naalvar_present array
+  // when available; fall back to saints string detection.
+  // ============================================================
+  
+  // Re-hook showTempleInPanel to run the corrected badge logic
+  var priorShowTempleInPanel = window.showTempleInPanel;
+  
+  window.showTempleInPanel = function(sno) {
+    if (typeof priorShowTempleInPanel === 'function') {
+      priorShowTempleInPanel(sno);
+    }
+    setTimeout(function() {
+      correctNaalvarBadge(sno);
+    }, 200);
+  };
+
+  function correctNaalvarBadge(sno) {
+    var temple = window.TEMPLES && window.TEMPLES.find(function(t) { return t.sno === sno; });
+    if (!temple) return;
+    var enrich = window.TEMPLE_ENRICHMENT[sno];
+    var lang = localStorage.getItem('pps-lang') || 'en';
+    var count = 0;
+
+    // First priority: check naalvar_present override in enrichment
+    if (enrich && enrich.naalvar_present && Array.isArray(enrich.naalvar_present)) {
+      count = enrich.naalvar_present.length;
+    } else {
+      // Fallback: detect from saints string
+      var saintsStr = (temple.saints || '').toLowerCase();
+      if (/sambandar/.test(saintsStr)) count++;
+      if (/appar/.test(saintsStr)) count++;
+      if (/sundarar/.test(saintsStr)) count++;
+      if (/manickavas|manikkavasagar|manickavasakar/.test(saintsStr)) count++;
+    }
+
+    if (count === 0) return;
+
+    var panel = document.getElementById('detail-panel-content');
+    if (!panel) return;
+
+    var label;
+    if (lang === 'ta') {
+      if (count === 4) label = '🙏 4 / 4 நாலவர்';
+      else if (count === 3) label = '🙏 3 / 4 நாலவர்';
+      else if (count === 2) label = '🙏 2 / 4 நாலவர்';
+      else if (count === 1) label = '🙏 1 / 4 நாலவர்';
+    } else {
+      if (count === 4) label = '🙏 4 of 4 Naalvar';
+      else if (count === 3) label = '🙏 3 of 4 Naalvar';
+      else if (count === 2) label = '🙏 2 of 4 Naalvar';
+      else if (count === 1) label = '🙏 1 of 4 Naalvar';
+    }
+
+    // Find the Naalvar badge in the panel header
+    var badges = panel.querySelectorAll('.dp-badge');
+    var naalvarBadge = null;
+    for (var i = 0; i < badges.length; i++) {
+      var t = badges[i].textContent;
+      if (/Naalvar/i.test(t) || /நாலவர்/.test(t) || /Naalva/i.test(t)) {
+        naalvarBadge = badges[i];
+        break;
+      }
+    }
+
+    if (naalvarBadge) {
+      naalvarBadge.textContent = label;
+    } else {
+      // Insert new badge
+      var badgesContainer = panel.querySelector('.dp-badges');
+      if (badgesContainer) {
+        var newBadge = document.createElement('span');
+        newBadge.className = 'dp-badge';
+        newBadge.textContent = label;
+        badgesContainer.insertBefore(newBadge, badgesContainer.firstChild);
+      }
+    }
+
+    console.log('[Session 1C.5a] Corrected Naalvar badge: ' + label + ' (source: ' + (enrich && enrich.naalvar_present ? 'override' : 'saints field') + ')');
+  }
+
+  // Watch language toggle to re-apply
+  function watchLangToggle() {
+    var toggleBtn = document.querySelector('.lang-toggle, [class*="lang-toggle"]');
+    if (!toggleBtn) {
+      setTimeout(watchLangToggle, 500);
+      return;
+    }
+    toggleBtn.addEventListener('click', function() {
+      setTimeout(function() {
+        var panel = document.getElementById('detail-panel');
+        var contentDiv = document.getElementById('detail-panel-content');
+        if (!panel || !contentDiv || !panel.classList.contains('has-content')) return;
+        var nameEl = contentDiv.querySelector('.dp-name');
+        if (!nameEl) return;
+        var match = nameEl.textContent.match(/#(\d+)/);
+        if (!match) return;
+        var sno = parseInt(match[1]);
+        if (sno) correctNaalvarBadge(sno);
+      }, 600);
+    });
+  }
+
+  function init() {
+    watchLangToggle();
+
+    // If a temple is currently showing in the panel, re-run the badge fix
+    var panel = document.getElementById('detail-panel');
+    var contentDiv = document.getElementById('detail-panel-content');
+    if (panel && panel.classList.contains('has-content') && contentDiv) {
+      var nameEl = contentDiv.querySelector('.dp-name');
+      if (nameEl) {
+        var match = nameEl.textContent.match(/#(\d+)/);
+        if (match) {
+          var sno = parseInt(match[1]);
+          correctNaalvarBadge(sno);
+        }
+      }
+    }
+
+    console.log('[Session 1C.5a] Naalvar override mechanism active.');
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() { setTimeout(init, 2800); });
+  } else {
+    setTimeout(init, 2800);
+  }
+})();
