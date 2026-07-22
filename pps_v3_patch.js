@@ -2342,3 +2342,132 @@ makeRow('Sources:', [
     setTimeout(init, 2500);
   }
 })();
+
+/* ============================================================ */
+/* SESSION_1C4_LOADED — Rameswaram Full Anchor-Level Content    */
+/* ============================================================ */
+(function(){
+  window.SESSION_1C4_LOADED = true;
+  console.log('[Session 1C.4] Loading Rameswaram anchor-level content...');
+
+  if (!window.TEMPLE_ENRICHMENT) window.TEMPLE_ENRICHMENT = {};
+
+  // ~800-word anchor-level English sthala purana
+  var sthalaEn = "Ramanathaswamy Temple stands on Rameswaram island in the Gulf of Mannar, at the southeastern tip of the Indian peninsula — one of the most theologically layered pilgrimage sites in India. It is one of the twelve Jyotirlingas of Shaiva pilgrimage, one of the four Char Dhams (alongside Badrinath, Dwarka, and Puri) of pan-Hindu pilgrimage, and one of the 276 Paadal Petra Sthalams sung by the Naalvar. This exceptional convergence — a single shrine holding Jyotirlinga status, Char Dham status, and Paadal Petra Sthalam status — makes Rameswaram unique in the entire Hindu pilgrimage geography.\n\nThe primary sthala purana centers on Sri Rama's atonement for Brahmahatya dosha. After defeating Ravana in the great war of the Ramayana, Rama returned through Rameswaram with Sita and Lakshmana. Ravana, though a demon king, was born a Brahmin — his slaying carried the karmic burden of brahma-hatya dosha (the sin of killing a Brahmin). At Sage Agastya's counsel, Rama sought to consecrate a Shiva Lingam here to absolve this sin. He dispatched Hanuman to Mount Kailasa to fetch a Lingam from Shiva's own abode. But Hanuman was delayed, and the auspicious hour for consecration approached. Sita, unwilling to let the muhurta pass, fashioned a Lingam from the sand of the seashore. Rama performed the consecration with this hand-made Lingam — this is the Ramalingam ('the Lingam made by Rama'), now the central deity of the sanctum. When Hanuman finally returned with the Lingam from Kailasa, he was dismayed that his labor had been unused. To honor Hanuman's devotion, Rama installed the Kailasa Lingam (called Vishvalingam) alongside the Ramalingam, and decreed that the Vishvalingam would receive darshan first — a unique two-Lingam arrangement pilgrims still observe today. The Yuddha Kanda of Valmiki Ramayana narrates Rama himself describing this spot to Sita as supremely sacred, capable of expiating major sins.\n\nThe second sthala purana centers on the geography of the Ram Setu (Sethu Bridge). Rameswaram island is the closest landmass on the Indian peninsula to Sri Lanka, separated by the shallow Palk Strait. The chain of limestone shoals and sand banks extending from Rameswaram toward Mannar in Sri Lanka is the celebrated Ram Setu (Adam's Bridge) — the bridge built by Rama's vanara army to cross the ocean. Colonial-era survey maps and modern oceanographic charts confirm the geological existence of this bridge. The temple's eastern entrance faces the bridge's Indian end. The Agni Theertham, the sea-bathing point used at the start of the pilgrimage, looks directly across to the first islet of the shoal chain. The pilgrimage's logical anchor — Rama crossed here, this is where he consecrated the Lingam — is continuous with the geography itself.\n\nThe third sthala purana concerns the 22 Theerthams within the temple. Twenty-two sacred wells (theerthams) exist within the temple complex, each traditionally believed to have distinct medicinal and spiritual properties. Pilgrims traditionally bathe in each of the 22 theerthams (in addition to the Agni Theertham at the sea) as a purification ritual before entering the sanctum. This 23-well bathing ritual (Agni Theertham + 22 inside) is unique to Rameswaram and is considered one of the most physically demanding pilgrimage rituals in Hinduism. Named theerthams include Mahalakshmi Theertham, Savithri Theertham, Gayathri Theertham, Sita Theertham, Ganga Theertham, and Yamuna Theertham — each associated with a specific spiritual property.\n\nThe fourth sthala purana centers on the temple's exceptional architecture. Ramanathaswamy Temple houses the LONGEST TEMPLE CORRIDOR in India — the outer corridor extends 1,212 meters and is lined with 1,212 finely carved granite pillars, creating a stunning visual effect of infinite perspective. The corridor was built primarily by King Muthuramalinga Sethupathi in the 17th century. The 126-foot East Rajagopuram (Eastern Gateway Tower) with nine tiers was completed between 1897 and 1904 by the Nagarathar (Nattukottai Chettiar) community from Devakottai. The temple was expanded across many dynasties: 12th century Pandya kings established the foundational structure, King Parakramabahu of Sri Lanka renovated the sanctum sanctorum in the 12th century, and the Sethupati kings of Ramanathapuram consolidated the great expansion through the 15th-17th centuries. The Nandi Mandapam features a 17-foot Nandi statue, one of the largest in South India.\n\nThe fifth theological layer establishes Rameswaram as the spiritual counterpart of Kashi (Varanasi). Tradition holds that a Kashi pilgrimage is incomplete without visiting Rameswaram, and vice versa. Pilgrims traditionally carry Ganga water from Varanasi to abhishek the Ramanathaswamy Lingam at Rameswaram, and take sand from the Rameswaram beach back to Kashi to submerge in the Ganga — completing the Kashi-Rameswaram circuit that unites the north and south of India in a single sacred journey.\n\nAll three Naalvar of the Tevaram tradition (Sambandar, Appar, Sundarar) sang Rameswaram; the temple appears in Sambandar's 3.111 Padigam, Appar's 5.83 Padigam, and Sundarar's 7.79 Padigam. Rameswaram is uniquely revered by Shaivites, Vaishnavites, and Smartas — a rare pan-Hindu shrine where sectarian distinctions dissolve before the divine union of Rama and Shiva. The Kothandaramaswamy Temple at Dhanushkodi (20 km from Rameswaram) commemorates the site where Vibhishana surrendered to Rama; the Gandhamadhana Parvatam nearby holds Rama's footprint. For over two millennia, Rameswaram has stood as the pilgrimage destination where mythology, geology, and devotion converge — the sacred southernmost point of Hindu India where the Ramayana meets the ocean.";
+
+  // ~800-word matching-depth Tamil sthala purana (original composition)
+  var sthalaTa = "தமிழ்நாட்டின் தென்கிழக்கு முனையில், மன்னார் வளைகுடாவில் அமைந்துள்ள ராமேஸ்வரம் தீவில் நிற்கும் ஶ்ரீ ராமநாதஸ்வாமி திருக்கோயில், இந்தியாவின் மிக இறையியல் ரீதியில் அடுக்கடுக்கான யாத்திரை தளங்களில் ஒன்று. இது ஶைவ யாத்திரையின் பன்னிரண்டு ஜோதிர்லிங்கங்களில் ஒன்று, பாரதத்தின் நான்கு தாம்களில் ஒன்று (பத்ரிநாத், துவாரகை, புரி ஆகியவற்றுடன்), மற்றும் நாலாவரால் பாடப்பட்ட 276 பாடல் பெற்ற தலங்களில் ஒன்று. இந்த அசாதாரண இணைப்பு — ஒரே கோயில் ஜோதிர்லிங்க, சார் தாம், மற்றும் பாடல் பெற்ற தலம் என்ற மூன்று அந்தஸ்துகளையும் தாங்கியிருப்பது — முழு இந்து யாத்திரை புவியியலிலும் ராமேஸ்வரத்தை தனித்துவமாக்குகிறது.\n\nமூல ஸ்தல புராணம் ஸ்ரீ ராமரின் பிரம்மஹத்திய தோஷ நிவாரணத்தை மையமாக்கியது. ராமாயணத்தின் மகா யுத்தத்தில் ராவணனை வதைத்த பின்னர், ராமர் சீதை மற்றும் லக்ஷ்மணருடன் ராமேஸ்வரம் வழியாக திரும்பி வந்தார். ராவணன் அசுர மன்னராக இருந்தாலும் பிராமணராகப் பிறந்தவர் — அவரது வதம் பிரம்மஹத்திய தோஷத்தின் (பிராமணரைக் கொல்லுதலின் பாவம்) கர்ம சுமையைத் தந்தது. அகஸ்திய முனிவரின் ஆலோசனையின்படி, ராமர் இந்தப் பாவத்தை நிவர்த்திக்க இங்கே ஒரு ஶிவ லிங்கத்தை பிரதிஷ்டை செய்ய விரும்பினார். அவர் ஶிவனின் இருப்பிடமான கைலாசத்திலிருந்து லிங்கம் கொண்டு வர அனுமனை அனுப்பினார். ஆனால் அனுமன் தாமதமானார், பிரதிஷ்டைக்கான நல்ல முகூர்த்தம் நெருங்கியது. முகூர்த்தத்தை கடந்துவிட விரும்பாத சீதை, கடலோர மணலிலிருந்து ஒரு லிங்கத்தை உருவாக்கினார். ராமர் இந்தக் கை-செய்த லிங்கத்துடன் பிரதிஷ்டை செய்தார் — இதுவே ராமலிங்கம் ('ராமரால் செய்யப்பட்ட லிங்கம்'), இப்போது கருவறையின் மைய தெய்வம். அனுமன் இறுதியாக கைலாசத்திலிருந்து லிங்கத்துடன் திரும்பியபோது, தமது உழைப்பு பயன்படுத்தப்படாததை கண்டு வருந்தினார். அனுமனின் பக்தியை மதிக்கும் விதமாக, ராமர் கைலாச லிங்கத்தை (விஸ்வலிங்கம் என்று அழைக்கப்படுகிறது) ராமலிங்கத்திற்கு அருகில் நிறுவினார், மற்றும் விஸ்வலிங்கம் முதலில் தரிசனம் பெறும் என்று விதித்தார் — யாத்திரிகர்கள் இன்றும் காணும் தனித்துவமான இரண்டு-லிங்க அமைப்பு. வால்மீகி ராமாயணத்தின் யுத்த காண்டம், ராமர் இந்த இடத்தை பெரும் பாவங்களை நிவர்த்திக்கக்கூடிய உன்னத புனித இடமாக சீதைக்கு விவரிப்பதை விவரிக்கிறது.\n\nஇரண்டாம் ஸ்தல புராணம் ராம சேது (சேது பாலம்) புவியியலை மையமாக்கியது. இந்திய தீபகற்பத்தில் இலங்கைக்கு மிக நெருக்கமான நிலப்பரப்பாக ராமேஸ்வரம் தீவு, ஆழமற்ற பாக்-ஸ்திரெய்ட்டால் பிரிக்கப்பட்டுள்ளது. ராமேஸ்வரத்திலிருந்து இலங்கையின் மன்னார் நோக்கி நீளும் சுண்ணாம்பு பாறை மற்றும் மணல் திட்டுகளின் சங்கிலியே புகழ்பெற்ற ராம சேது (ஆடம்ஸ் பிரிட்ஜ்) — கடலை கடக்க ராமரின் வானர சேனை கட்டிய பாலம். காலனித்துவ கால ஆய்வு வரைபடங்களும் நவீன கடல்-அறிவியல் விளக்கப்படங்களும் இப்பாலத்தின் புவியியல் இருப்பை உறுதிப்படுத்துகின்றன. கோயிலின் கிழக்கு நுழைவாயில் பாலத்தின் இந்திய முனையை நோக்கியுள்ளது. யாத்திரையின் தொடக்கத்தில் பயன்படுத்தப்படும் கடல்-குளியல் இடமான அக்னி தீர்த்தம், சாலை சங்கிலியின் முதல் தீவை நேரடியாக நோக்குகிறது.\n\nமூன்றாம் ஸ்தல புராணம் கோயிலின் உள்ளே உள்ள 22 தீர்த்தங்களைச் சார்ந்தது. கோயில் வளாகத்தில் இருபத்திரண்டு புனித கிணறுகள் (தீர்த்தங்கள்) உள்ளன, ஒவ்வொன்றும் தனித்துவமான மருத்துவ மற்றும் ஆன்மிக பண்புகளைக் கொண்டதாக பாரம்பரியமாக நம்பப்படுகிறது. யாத்திரிகர்கள் கருவறையில் நுழைவதற்கு முன் ஒரு தூய்மைப்படுத்தும் சடங்காக 22 தீர்த்தங்களிலும் (கடலில் உள்ள அக்னி தீர்த்தத்திற்கு கூடுதலாக) பாரம்பரியமாக குளிக்கிறார்கள். இந்த 23-கிணறு குளியல் சடங்கு (அக்னி தீர்த்தம் + உள்ளே 22) ராமேஸ்வரத்திற்கு தனித்துவமானது மற்றும் இந்து மதத்தில் மிக உடல் ரீதியில் கடினமான யாத்திரை சடங்குகளில் ஒன்றாக கருதப்படுகிறது. மகாலக்ஷ்மி தீர்த்தம், சாவித்திரி தீர்த்தம், காயத்திரி தீர்த்தம், சீதா தீர்த்தம், கங்கை தீர்த்தம், யமுனை தீர்த்தம் — ஒவ்வொன்றும் ஒரு குறிப்பிட்ட ஆன்மிக பண்புடன் தொடர்புடையது.\n\nநான்காம் ஸ்தல புராணம் கோயிலின் அசாதாரண கட்டிடக்கலையை சார்ந்தது. ராமநாதஸ்வாமி திருக்கோயில் இந்தியாவின் மிக நீளமான கோயில் தாழ்வாரத்தை (Corridor) கொண்டுள்ளது — வெளிப்புற தாழ்வாரம் 1,212 மீட்டர் நீளம் கொண்டது, 1,212 நேர்த்தியாக செதுக்கப்பட்ட கிரானைட் தூண்களால் அலங்கரிக்கப்பட்டு, முடிவற்ற காட்சியின் அற்புத விளைவை உருவாக்குகிறது. இத்தாழ்வாரம் முதன்மையாக 17-ம் நூற்றாண்டில் மன்னர் முத்துராமலிங்க சேதுபதியால் கட்டப்பட்டது. ஒன்பது அடுக்குகள் கொண்ட 126 அடி கிழக்கு ராஜகோபுரம் 1897 மற்றும் 1904 ஆண்டுகளுக்கு இடையில் தேவகோட்டையின் நகரத்தார் (நாட்டுக்கோட்டை செட்டியார்) சமூகத்தால் முடிக்கப்பட்டது. கோயில் பல வம்சங்களிலும் விரிவாக்கப்பட்டது: 12-ம் நூற்றாண்டில் பாண்டிய மன்னர்கள் அடிப்படை கட்டமைப்பை நிறுவினர், அதே காலகட்டத்தில் இலங்கை மன்னர் பராக்ரமபாகு கருவறையை புதுப்பித்தார், மற்றும் ராமநாதபுரத்தின் சேதுபதி மன்னர்கள் 15-17-ம் நூற்றாண்டுகள் வழியாக பெரிய விரிவாக்கத்தை ஒருங்கிணைத்தனர். நந்தி மண்டபத்தில் தென்னிந்தியாவின் மிக பெரிய நந்தி சிலைகளில் ஒன்றான 17 அடி நந்தி சிலை உள்ளது.\n\nஐந்தாம் இறையியல் அடுக்கு ராமேஸ்வரத்தை காசியின் (வாராணசி) ஆன்மிக இணையாக நிறுவுகிறது. காசி யாத்திரை ராமேஸ்வரத்திற்கு பார்வையிடாமல் முழுமையடையாது என்றும், அதற்கு நேர்மாறாகவும் பாரம்பரியம் கூறுகிறது. யாத்திரிகர்கள் பாரம்பரியமாக வாராணசியிலிருந்து கங்கை நீரை ராமேஸ்வரத்திற்கு கொண்டு வந்து ராமநாதஸ்வாமி லிங்கத்திற்கு அபிஷேகம் செய்கிறார்கள், மற்றும் ராமேஸ்வரம் கடற்கரையிலிருந்து மணலை காசிக்கு எடுத்துச் சென்று கங்கையில் மூழ்கடிக்கிறார்கள் — காசி-ராமேஸ்வரம் சுற்று இந்தியாவின் வடக்கு மற்றும் தெற்கை ஒரே புனித பயணத்தில் இணைக்கிறது.\n\nதேவார பாரம்பரியத்தின் மூன்று நாலாவர்களும் (சம்பந்தர், அப்பர், சுந்தரர்) ராமேஸ்வரத்தைப் பாடினர்; சம்பந்தரின் 3.111 பதிகம், அப்பரின் 5.83 பதிகம், மற்றும் சுந்தரரின் 7.79 பதிகத்தில் இக்கோயில் தோன்றுகிறது. ராமேஸ்வரம் ஶைவர்கள், வைஷ்ணவர்கள், மற்றும் ஸ்மார்த்தர்களால் தனித்துவமாக வணங்கப்படுகிறது — ராமன் மற்றும் ஶிவனின் தெய்வீக ஐக்கியத்திற்கு முன் மத பிரிவினைகள் கரையும் ஒரு அரிய பான்-இந்து ஆலயம். தனுஷ்கோடியில் உள்ள கோதண்டராமஸ்வாமி திருக்கோயில் (ராமேஸ்வரத்திலிருந்து 20 கி.மீ.) விபீஷணர் ராமரிடம் சரணடைந்த இடத்தை நினைவூட்டுகிறது; அருகிலுள்ள கந்தமாதன பர்வதம் ராமரின் பாதச்சுவட்டை கொண்டுள்ளது. இரண்டு ஆயிரம் ஆண்டுகளுக்கும் மேலாக, ராமேஸ்வரம் புராணம், புவியியல், மற்றும் பக்தி இணையும் யாத்திரை தலமாக நிற்கிறது — இந்து இந்தியாவின் புனித தென் முனை, ராமாயணம் கடலைச் சந்திக்கும் இடம்.";
+
+  window.TEMPLE_ENRICHMENT[205] = {
+    sthala_purana_en: sthalaEn,
+    sthala_purana_ta: sthalaTa,
+
+    // Deity (Ramanathaswamy) already in temple.name — no need to duplicate
+    // Goddess (Consort)
+    goddess_en: "Parvatavardhini Amman",
+    goddess_ta: "பர்வதவர்த்தினி அம்மன்",
+
+    // Theertham (renamed from Pushkarini in display) — Rameswaram is unique for its 22 theerthams
+    pushkarini_en: "Agni Theertham (the sea itself) + 22 sacred wells inside temple (Mahalakshmi, Savithri, Gayathri, Sita, Ganga, Yamuna Theerthams and more)",
+    pushkarini_ta: "அக்னி தீர்த்தம் (கடல்) + கோயிலுக்குள் 22 புனித கிணறுகள் (மகாலக்ஷ்மி, சாவித்திரி, காயத்திரி, சீதா, கங்கை, யமுனை தீர்த்தங்கள் மற்றும் பல)",
+
+    // Sthala Vriksha - Kokku (Cordia dichotoma)
+    sthala_vriksha: {
+      common_name_en: "Kokku",
+      common_name_ta: "கொக்கு",
+      scientific_name: "Cordia dichotoma",
+      description_en: "The Kokku tree (Cordia dichotoma), also known as the Fragrant Manjack, Sebesten Plum, or Indian Cherry, is a small to medium-sized deciduous tree native to South Asia and Southeast Asia. It grows up to 10 meters tall, producing yellow to orange edible fruits and small white or pink flowers. The tree is well-adapted to coastal saline conditions, making it a natural companion tree to the Rameswaram island's coastal environment.",
+      description_ta: "கொக்கு மரம் (Cordia dichotoma), 'நறுமண மஞ்ஜாக்' அல்லது 'இந்திய செர்ரி' என்றும் அழைக்கப்படும் இது தென்-தெற்கு ஆசியாவில் காணப்படும் ஒரு நடுத்தர அளவிலான இலையுதிர் மரம். 10 மீட்டர் உயரம் வரை வளர்ந்து, மஞ்சள்-ஆரஞ்சு உண்ணக்கூடிய பழங்களையும், சிறிய வெள்ளை அல்லது இளஞ்சிவப்பு பூக்களையும் தருகிறது. கடலோர கார நிலைமைகளுக்கு நன்கு தழுவியிருப்பதால், ராமேஸ்வரம் தீவின் கடலோர சூழலுக்கு இயற்கையான துணை மரமாக அமைந்துள்ளது.",
+      significance_en: "The Kokku tree carries strong Ramayana associations at Rameswaram — the Kokku (crane) also appears in scenes where Rama and Sita rested during their journey. The tree's coastal-tolerant nature symbolizes Rameswaram's identity as the sacred meeting point of land and sea. In traditional Tamil Shaiva pilgrimage practice, the leaves and bark of the Sthala Vriksha are used in worship rituals of Ramanathaswamy.",
+      significance_ta: "கொக்கு மரம் ராமேஸ்வரத்தில் வலுவான ராமாயண தொடர்புகளைக் கொண்டுள்ளது — ராமரும் சீதையும் தமது பயணத்தின்போது ஓய்வெடுத்த காட்சிகளில் கொக்கு (பறவை) தோன்றுகிறது. மரத்தின் கடலோர-தாக்குப்பிடிக்கும் தன்மை ராமேஸ்வரத்தை நிலம் மற்றும் கடலின் புனித சந்திப்புப் புள்ளியாக அடையாளப்படுத்துகிறது. பாரம்பரிய தமிழ் ஶைவ யாத்திரை நடைமுறையில், ஸ்தல விருக்ஷத்தின் இலைகள் மற்றும் பட்டைகள் ராமநாதஸ்வாமியின் வழிபாட்டு சடங்குகளில் பயன்படுத்தப்படுகின்றன."
+    },
+
+    size_acres: 15,
+
+    festivals_en: [
+      "Maha Shivaratri (Feb-Mar) — night-long prayers, most important festival",
+      "Thirukalyanam (Aadi Amavasai, Jul-Aug) — celestial wedding of Ramanathaswamy and Parvatavardhini re-enacted",
+      "Ramalinga Pratishtha Utsavam (Vaikasi, May-Jun) — commemorating Rama's consecration of the Lingam",
+      "Aani Brahmotsavam (Jun-Jul) — 12-day annual festival with daily processions",
+      "Navaratri (Sep-Oct) — nine-night festival for Devi Parvatavardhini",
+      "Aadi Amavasya (Jul-Aug) — pithru karma at Agni Theertham",
+      "Karthigai Deepam (Nov-Dec)",
+      "Thai Amavasya (Jan-Feb)"
+    ],
+    festivals_ta: [
+      "மகா ஶிவராத்திரி (பிப்-மார்) — இரவு நீள பிரார்த்தனைகள், மிக முக்கிய விழா",
+      "திருக்கல்யாணம் (ஆடி அமாவாசை, ஜூல்-ஆக) — ராமநாதஸ்வாமி மற்றும் பர்வதவர்த்தினியின் தெய்வீக திருமணம்",
+      "ராமலிங்க பிரதிஷ்டா உற்சவம் (வைகாசி, மே-ஜூன்) — ராமரின் லிங்க பிரதிஷ்டையை நினைவூட்டும் விழா",
+      "ஆனி பிரம்மோற்சவம் (ஜூன்-ஜூலை) — 12-நாள் வருடாந்திர விழா, தினசரி ஊர்வலங்களுடன்",
+      "நவராத்திரி (செப்-அக்) — தேவி பர்வதவர்த்தினியின் ஒன்பது-இரவு விழா",
+      "ஆடி அமாவாசை (ஜூலை-ஆக) — அக்னி தீர்த்தத்தில் பித்ரு கர்மா",
+      "கார்த்திகை தீபம் (நவ-டிச)",
+      "தை அமாவாசை (ஜன-பிப்)"
+    ],
+
+    town_ta: "ராமேஸ்வரம்",
+    coords_verified: true,
+
+    nayanmar_associations: [
+      {
+        nayanmar: "sundarar",
+        role: "pathigam",
+        brief_en: "Sundarar's Devaram pathigam on Rameswaram",
+        brief_ta: "ராமேஸ்வரம் மீது சுந்தரரின் தேவாரப் பதிகம்",
+        story_en: "Sundarar sang his 7.79 pathigam on Ramanathaswamy Temple, celebrating the deity as the Lord who Rama himself worshipped. Sundarar's compositions capture the theological significance of Rameswaram as the meeting point of the two great avatars — Rama's devotion to Shiva expressed in ritual worship.",
+        story_ta: "சுந்தரர் ராமநாதஸ்வாமி திருக்கோயில் மீது தமது 7.79 பதிகத்தை பாடினார், ராமரே வணங்கிய இறைவனாக தெய்வத்தைக் கொண்டாடினார். சுந்தரரின் இயற்றங்கள் ராமேஸ்வரத்தை இரண்டு மகா அவதாரங்களின் சந்திப்புப் புள்ளியாக இறையியல் ரீதியில் முக்கியத்துவம் அளிக்கிறது — ஶிவனுக்கு ராமரின் பக்தி சடங்கு வழிபாட்டில் வெளிப்பட்டது."
+      },
+      {
+        nayanmar: "sambandar",
+        role: "pathigam",
+        brief_en: "Sambandar's 3.111 pathigam on Rameswaram",
+        brief_ta: "ராமேஸ்வரம் மீது சம்பந்தரின் 3.111 பதிகம்",
+        story_en: "Thirujnana Sambandar visited Rameswaram during his southern pilgrimage and composed his 3.111 pathigam. His verses emphasize the pilgrimage merit of the 22 theerthams and describe the temple's connection to the Ramayana narrative.",
+        story_ta: "திருஞானசம்பந்தர் தமது தென் யாத்திரையின்போது ராமேஸ்வரம் வந்து தமது 3.111 பதிகத்தை இயற்றினார். அவரது பாசுரங்கள் 22 தீர்த்தங்களின் யாத்திரை புண்ணியத்தை வலியுறுத்துகின்றன மற்றும் ராமாயண கதைக்கு கோயிலின் தொடர்பை விவரிக்கின்றன."
+      },
+      {
+        nayanmar: "appar",
+        role: "pathigam",
+        brief_en: "Appar's 5.83 pathigam on Rameswaram",
+        brief_ta: "ராமேஸ்வரம் மீது அப்பரின் 5.83 பதிகம்",
+        story_en: "Thirunavukkarasar (Appar) composed his 5.83 pathigam at Rameswaram, celebrating the deity as Ramanathaswamy — the Lord of Rama. Appar's compositions reflect the philosophical depth of the shrine's significance: Shiva accepts worship from Rama himself, showing that all divinity is ultimately unified.",
+        story_ta: "திருநாவுக்கரசர் (அப்பர்) ராமேஸ்வரத்தில் தமது 5.83 பதிகத்தை இயற்றினார், தெய்வத்தை ராமநாதஸ்வாமி — ராமரின் இறைவன் என்று கொண்டாடினார். அப்பரின் இயற்றங்கள் ஆலயத்தின் முக்கியத்துவத்தின் தத்துவ ஆழத்தை பிரதிபலிக்கின்றன: ஶிவன் ராமரிடமிருந்தே வழிபாட்டை ஏற்கிறார், அனைத்து தெய்வீகமும் இறுதியில் ஒற்றுமையானது என்பதைக் காட்டுகிறது."
+      }
+    ],
+
+    cross_tradition_en: [
+      { tradition: "sri_vaishnava", story: "Rameswaram is uniquely revered in Sri Vaishnava tradition as the temple where Sri Rama (the seventh avatar of Vishnu) himself performed Shiva worship. The Kothandaramaswamy Temple at Dhanushkodi (20 km away) is a dedicated Rama shrine commemorating Vibhishana's surrender. The site's dual Rama-Shiva veneration makes it one of the very few temples where Shaiva and Sri Vaishnava traditions merge in ritual — a Vishnu avatar worshipping Shiva. This theological unity is why Rameswaram is one of the four Char Dhams alongside three Vaishnava sites (Badrinath, Dwarka, Puri)." },
+      { tradition: "shakta", story: "The Parvatavardhini Amman shrine within the complex represents the Shakta dimension. Parvatavardhini (meaning 'One who nurtures the Mountain-daughter') is Parvati, and the Ramayana narrative includes her presence as Sita at Rameswaram. The Navaratri festival celebrates Devi's nine-night worship." },
+      { tradition: "vaidika", story: "Rameswaram's exceptional 23-well bathing ritual (Agni Theertham + 22 inside) preserves an ancient Vedic pilgrimage practice. The daily poojas follow strict Vedic protocols with mantras invoking each of the 22 theerthams by name, connecting the temple's ritual practice to the Vedic Kalpa Sutras. The Ardhajama Pooja at 8:30 PM specifically features Vedic hymns from the Sri Rudram." },
+      { tradition: "other", story: "Rameswaram uniquely holds Jyotirlinga status among the 12, Char Dham status among the 4, and Paadal Petra Sthalam status among the 276 — the only temple in India with all three designations. This convergence establishes it as one of the most pan-Hindu shrines in South Asia. The Kashi-Rameswaram circuit (carrying Ganga water to Rameswaram, taking Rameswaram sand to Kashi) unites the north and south of India in a single sacred journey." }
+    ],
+    cross_tradition_ta: [
+      { tradition: "sri_vaishnava", story: "ஶ்ரீ ராமர் (விஷ்ணுவின் ஏழாவது அவதாரம்) தாமே ஶிவ வழிபாட்டைச் செய்த கோயிலாக ராமேஸ்வரம் ஶ்ரீ வைஷ்ணவ பாரம்பரியத்தில் தனித்துவமாக மதிக்கப்படுகிறது. தனுஷ்கோடியில் உள்ள கோதண்டராமஸ்வாமி திருக்கோயில் (20 கி.மீ. தொலைவில்) விபீஷணரின் சரணடைவை நினைவூட்டும் ஒரு ராம ஆலயம். தளத்தின் இரட்டை ராம-ஶிவ வழிபாடு ஶைவ மற்றும் ஶ்ரீ வைஷ்ணவ பாரம்பரியங்கள் சடங்கு ரீதியில் இணையும் ஒரு சில கோயில்களில் ஒன்றாக இதை ஆக்குகிறது — ஒரு விஷ்ணு அவதாரம் ஶிவனை வணங்குதல். இந்த இறையியல் ஒற்றுமை காரணமாகவே மூன்று வைஷ்ணவ தலங்களுடன் (பத்ரிநாத், துவாரகை, புரி) சேர்த்து ராமேஸ்வரம் நான்கு தாம்களில் ஒன்று." },
+      { tradition: "shakta", story: "வளாகத்திற்குள் பர்வதவர்த்தினி அம்மன் ஆலயம் ஶாக்த பரிமாணத்தை பிரதிநிதித்துவப்படுத்துகிறது. பர்வதவர்த்தினி (மலை-மகளை போஷிப்பவர் என்று பொருள்) பார்வதி, மற்றும் ராமாயண கதையில் ராமேஸ்வரத்தில் சீதாவாக அவரது இருப்பு அடங்கியுள்ளது. நவராத்திரி விழா தேவியின் ஒன்பது-இரவு வழிபாட்டைக் கொண்டாடுகிறது." },
+      { tradition: "vaidika", story: "ராமேஸ்வரத்தின் அசாதாரண 23-கிணறு குளியல் சடங்கு (அக்னி தீர்த்தம் + உள்ளே 22) ஒரு பழம் வைதிக யாத்திரை நடைமுறையை பாதுகாக்கிறது. தினசரி பூஜைகள் 22 தீர்த்தங்களை ஒவ்வொன்றையும் பெயரால் அழைக்கும் மந்திரங்களுடன் கடினமான வைதிக நடைமுறையை பின்பற்றுகின்றன, கோயிலின் சடங்கு நடைமுறையை வைதிக கல்ப சூத்திரங்களுடன் இணைக்கிறது. இரவு 8:30 மணிக்கு நடத்தப்படும் அர்த்தஜாம பூஜை குறிப்பாக ஶ்ரீ ருத்திரத்தில் இருந்து வேத பாசுரங்களை உள்ளடக்கியது." },
+      { tradition: "other", story: "12 ஜோதிர்லிங்கங்களில் ஜோதிர்லிங்க அந்தஸ்து, 4 சார் தாம்களில் சார் தாம் அந்தஸ்து, மற்றும் 276 பாடல் பெற்ற ஸ்தலங்களில் பாடல் பெற்ற ஸ்தலம் அந்தஸ்து — மூன்றும் ஒரே கோயிலில் இருக்கும் ஒரே தளம் இந்தியாவில் ராமேஸ்வரம் மட்டுமே. இந்த ஒருங்கிணைப்பு தென் ஆசியாவின் மிக பான்-இந்து ஆலயங்களில் ஒன்றாக இதை நிறுவுகிறது. காசி-ராமேஸ்வரம் சுற்று (கங்கை நீரை ராமேஸ்வரத்திற்கு எடுத்துச் செல்வது, ராமேஸ்வரம் மணலை காசிக்கு எடுத்துச் செல்வது) ஒரே புனித பயணத்தில் இந்தியாவின் வடக்கு மற்றும் தெற்கை இணைக்கிறது." }
+    ]
+  };
+
+  console.log('[Session 1C.4] Rameswaram (sno 205) enrichment loaded with anchor-level content.');
+  console.log('[Session 1C.4] Sthala Purana length: ' + sthalaEn.length + ' chars (English), ' + sthalaTa.length + ' chars (Tamil)');
+  console.log('[Session 1C.4] Sthala Vriksha: Kokku (Cordia dichotoma) with full description + significance');
+  console.log('[Session 1C.4] Nayanmar associations: 3 (Sundarar, Sambandar, Appar - pathigams)');
+  console.log('[Session 1C.4] Cross-tradition links: 4 (Sri Vaishnava, Shakta, Vaidika, Other)');
+  console.log('[Session 1C.4] Festivals: 8 (bilingual)');
+
+  // If panel is currently showing Rameswaram, re-render to show new content
+  setTimeout(function() {
+    if (typeof window.showTempleInPanel === 'function') {
+      var panel = document.getElementById('detail-panel');
+      var contentDiv = document.getElementById('detail-panel-content');
+      if (panel && panel.classList.contains('has-content') && contentDiv) {
+        var nameEl = contentDiv.querySelector('.dp-name');
+        if (nameEl && nameEl.textContent.indexOf('#205') !== -1) {
+          window.showTempleInPanel(205);
+          console.log('[Session 1C.4] Re-rendered current Rameswaram panel with new content');
+        }
+      }
+    }
+  }, 500);
+})();
