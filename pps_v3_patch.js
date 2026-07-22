@@ -2193,3 +2193,152 @@ makeRow('Sources:', [
     }
   }, 500);
 })();
+
+/* ============================================================ */
+/* SESSION_1C3_LOADED — Compact sidebar + fix Naalvar count      */
+/* ============================================================ */
+(function(){
+  window.SESSION_1C3_LOADED = true;
+  console.log('[Session 1C.3] Loading compact sidebar + Naalvar count fix...');
+
+  // ============================================================
+  // FIX 1: CSS to hide enrichment sections on sidebar cards
+  //        (keep them showing in right panel)
+  // ============================================================
+  var style = document.createElement('style');
+  style.textContent = [
+    // Hide Session 1A enrichment sections when they appear inside sidebar cards
+    '#cards .card .pps-enrich { display: none !important; }',
+    '#cards .card .pps-nayanmar-section { display: none !important; }',
+    '#cards .card .pps-crosstrad-section { display: none !important; }',
+    '#cards .card .pps-sthala-vriksha-row { display: none !important; }',
+    // Ensure right panel still shows these
+    '#detail-panel .pps-enrich, #detail-panel-content .pps-enrich { display: block !important; }',
+    '#detail-panel .pps-nayanmar-section, #detail-panel-content .pps-nayanmar-section { display: block !important; }',
+    '#detail-panel .pps-crosstrad-section, #detail-panel-content .pps-crosstrad-section { display: block !important; }'
+  ].join('\n');
+  style.id = 'pps-1c3-styles';
+  var prior = document.getElementById('pps-1c3-styles');
+  if (prior) prior.remove();
+  document.head.appendChild(style);
+  console.log('[Session 1C.3] Sidebar card CSS applied (enrichment hidden in sidebar)');
+
+  // ============================================================
+  // FIX 2: Override showTempleInPanel to correct Naalvar count
+  //        Header should show "N of 4 Naalvar" accurately
+  // ============================================================
+  var originalShowTempleInPanel = window.showTempleInPanel;
+
+  window.showTempleInPanel = function(sno) {
+    if (typeof originalShowTempleInPanel === 'function') {
+      originalShowTempleInPanel(sno);
+    }
+    // After panel is rendered, fix the Naalvar badge
+    setTimeout(function() {
+      fixNaalvarBadge(sno);
+    }, 100);
+  };
+
+  function fixNaalvarBadge(sno) {
+    var temple = window.TEMPLES && window.TEMPLES.find(function(t) { return t.sno === sno; });
+    if (!temple) return;
+    var lang = localStorage.getItem('pps-lang') || 'en';
+
+    // Count actual Naalvar (Sambandar, Appar, Sundarar, Manickavasakar) in saints field
+    var saintsStr = (temple.saints || '').toLowerCase();
+    var count = 0;
+    var naalvarPresent = [];
+    if (/sambandar/.test(saintsStr)) { count++; naalvarPresent.push('Sambandar'); }
+    if (/appar/.test(saintsStr)) { count++; naalvarPresent.push('Appar'); }
+    if (/sundarar/.test(saintsStr)) { count++; naalvarPresent.push('Sundarar'); }
+    if (/manickavas/.test(saintsStr) || /manikkavasagar/.test(saintsStr) || /manickavasakar/.test(saintsStr)) {
+      count++;
+      naalvarPresent.push('Manickavasakar');
+    }
+
+    if (count === 0) return; // No Naalvar mentioned at all
+
+    // Find the existing Naalvar badge in the panel header
+    var panel = document.getElementById('detail-panel-content');
+    if (!panel) return;
+    var badges = panel.querySelectorAll('.dp-badge');
+    var naalvarBadge = null;
+    for (var i = 0; i < badges.length; i++) {
+      var t = badges[i].textContent;
+      if (/Naalvar/i.test(t) || /Naalva/i.test(t) || /மூவர்/.test(t) || /நாலவர்/.test(t) || /நாலவர்/.test(t)) {
+        naalvarBadge = badges[i];
+        break;
+      }
+    }
+
+    // Build accurate label
+    var label;
+    if (lang === 'ta') {
+      // Tamil labels
+      if (count === 4) label = '🙏 4 / 4 நாலவர்';
+      else if (count === 3) label = '🙏 3 / 4 நாலவர்';
+      else if (count === 2) label = '🙏 2 / 4 நாலவர்';
+      else if (count === 1) label = '🙏 1 / 4 நாலவர்';
+    } else {
+      // English labels
+      if (count === 4) label = '🙏 4 of 4 Naalvar';
+      else if (count === 3) label = '🙏 3 of 4 Naalvar';
+      else if (count === 2) label = '🙏 2 of 4 Naalvar';
+      else if (count === 1) label = '🙏 1 of 4 Naalvar';
+    }
+
+    if (naalvarBadge) {
+      naalvarBadge.textContent = label;
+    } else {
+      // No existing Naalvar badge — insert new one before the tier badge
+      var badgesContainer = panel.querySelector('.dp-badges');
+      if (badgesContainer) {
+        var newBadge = document.createElement('span');
+        newBadge.className = 'dp-badge';
+        newBadge.textContent = label;
+        badgesContainer.insertBefore(newBadge, badgesContainer.firstChild);
+      }
+    }
+
+    console.log('[Session 1C.3] Naalvar badge updated: ' + label + ' (present: ' + naalvarPresent.join(', ') + ')');
+  }
+
+  // ============================================================
+  // Watch language toggle to re-apply Naalvar badge fix
+  // ============================================================
+  function watchLangToggleForBadge() {
+    var toggleBtn = document.querySelector('.lang-toggle, [class*="lang-toggle"]');
+    if (!toggleBtn) {
+      setTimeout(watchLangToggleForBadge, 500);
+      return;
+    }
+    toggleBtn.addEventListener('click', function() {
+      setTimeout(function() {
+        // Find currently displayed sno in the panel
+        var panel = document.getElementById('detail-panel');
+        var contentDiv = document.getElementById('detail-panel-content');
+        if (!panel || !contentDiv || !panel.classList.contains('has-content')) return;
+        var nameEl = contentDiv.querySelector('.dp-name');
+        if (!nameEl) return;
+        var match = nameEl.textContent.match(/#(\d+)/);
+        if (!match) return;
+        var sno = parseInt(match[1]);
+        if (sno) fixNaalvarBadge(sno);
+      }, 500);
+    });
+  }
+
+  // ============================================================
+  // INITIALIZE
+  // ============================================================
+  function init() {
+    watchLangToggleForBadge();
+    console.log('[Session 1C.3] Compact sidebar + Naalvar count fix active.');
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() { setTimeout(init, 2500); });
+  } else {
+    setTimeout(init, 2500);
+  }
+})();
