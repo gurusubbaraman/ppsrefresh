@@ -2916,3 +2916,218 @@ makeRow('Sources:', [
     }
   }, 500);
 })();
+// ============================================================
+// SESSION 1C.7 — Vaitheeswaran Koil (Sno 49) — PART 1 of 4
+// Category A + B: Schema fields (identity, theertham, vriksham,
+// goddess, pushkarini, festivals, town, vimana, facing, aliases)
+// ============================================================
+// PASTE LOCATION: pps_v3_patch.js
+// Inside TEMPLE_ENRICHMENT = { ... }, add a new entry keyed by 49
+// Place it after the existing entry for sno 130 (Thiruvarur)
+// and before NAALVAR_OVERRIDES
+// ============================================================
+
+  49: {
+    // ---------- Category A: Identity & aliases ----------
+    town_ta: "வைத்தீஸ்வரன் கோயில்",
+    alternate_names_en: [
+      "Pullirukkuvelur",
+      "Vaidyanatha Swamy Temple",
+      "Vaideeswaran Koil"
+    ],
+    alternate_names_ta: [
+      "புள்ளிருக்குவேளூர்",
+      "வைத்தியநாதசுவாமி திருக்கோயில்",
+      "வைதீஸ்வரன் கோயில்"
+    ],
+
+    // ---------- Category A: Sthala vriksham (tree) ----------
+    sthala_vriksham_en: "Neem (Azadirachta indica)",
+    sthala_vriksham_ta: "வேப்ப மரம்",
+    sthala_vriksham_note_en:
+      "The neem is revered here as the living body of the goddess Thaiyalnayaki. Pilgrims tie yellow cloth pouches of medicinal powders to its branches as prayers for healing.",
+    sthala_vriksham_note_ta:
+      "இந்த வேப்ப மரம் தையல்நாயகி அம்பாளின் உயிர்த்த வடிவமாகக் கருதப்படுகிறது. மருந்துப் பொடிகளை மஞ்சள் துணியில் கட்டி மரக்கிளையில் தொங்கவிட்டு நோய் தீர வேண்டுவது மரபு.",
+
+    // ---------- Category A: Theertham (sacred water) ----------
+    theertham_en: "Siddhamrita Theertham",
+    theertham_ta: "சித்தாமிர்த தீர்த்தம்",
+    theertham_note_en:
+      "Believed to have been prepared by Dhanvantari, the divine physician, this tank is said to contain traces of every medicinal herb. A bath here on Sundays is considered curative for chronic ailments.",
+    theertham_note_ta:
+      "தன்வந்தரி மருத்துவனால் அமுதம் கலந்து அமைக்கப்பட்டதாகக் கூறப்படும் இத்தீர்த்தம், அனைத்து மூலிகைகளின் சாரம் கொண்டதாகக் கருதப்படுகிறது. ஞாயிற்றுக்கிழமைகளில் இதில் நீராடினால் நீண்ட நாள் நோய்கள் தீரும் என்பது நம்பிக்கை.",
+
+    // ---------- Category B: Goddess ----------
+    goddess_en: "Thaiyalnayaki (Balambika)",
+    goddess_ta: "தையல்நாயகி (பாலாம்பிகை)",
+    goddess_note_en:
+      "The goddess stands with a small vessel of medicinal oil, offering it as remedy to devotees. She is worshipped as the compassionate mother-physician who nurses the ailing back to health.",
+    goddess_note_ta:
+      "தையல்நாயகி அம்பாள் மருந்து எண்ணெய் நிறைந்த சிறு கலசத்தை ஏந்தி நிற்கும் திருக்கோலத்தில் காட்சி தருகிறாள். நோயுற்றோரை அரவணைத்துக் காக்கும் தாய்-வைத்தியராக அவள் வழிபடப்படுகிறாள்.",
+
+    // ---------- Category B: Pushkarini & tank ----------
+    pushkarini_en:
+      "Siddhamrita Theertham (main tank, east of the temple) plus 18 subsidiary tirthams within the campus",
+    pushkarini_ta:
+      "சித்தாமிர்த தீர்த்தம் (கிழக்கு பெருங்குளம்) மற்றும் திருக்கோயில் வளாகத்தில் 18 உபதீர்த்தங்கள்",
+
+    // ---------- Category B: Vimana ----------
+    vimana_en: "Vedha Vimana (over the Vaidyanatha sanctum)",
+    vimana_ta: "வேத விமானம்",
+    vimana_note_en:
+      "The vimana is said to have been consecrated by the four Vedas personified, seeking Shiva's blessing for the healing of Sage Sukra's wounded eye.",
+    vimana_note_ta:
+      "நான்கு வேதங்களும் உருவெடுத்து வந்து சுக்கிரனின் காயமுற்ற கண் குணமாக இறைவனை வேண்டியபோது நிலைநிறுத்தப்பட்டதாக இவ்விமானம் கூறப்படுகிறது.",
+
+    // ---------- Category B: Facing ----------
+    facing_en: "West",
+    facing_ta: "மேற்கு நோக்கி",
+
+    // ---------- Category B: Size ----------
+    size_acres: 6.3,
+
+    // ---------- Category B: Festivals ----------
+    festivals_en: [
+      "Panguni Brahmotsavam (13-day festival, Feb–Mar)",
+      "Thai Poosam (Jan–Feb) — grand abhishekam to Muthukumara Swamy",
+      "Ratha Saptami (Feb) — Surya worship for eye ailments",
+      "Sunday Angaraka worship (weekly) — for planetary Mars remedies",
+      "Aadi Pooram (Jul–Aug) — festival of Thaiyalnayaki",
+      "Karthigai Deepam (Nov–Dec)"
+    ],
+    festivals_ta: [
+      "பங்குனி பிரம்மோற்சவம் (13 நாள் விழா, பங்குனி மாதம்)",
+      "தைப்பூசம் — முத்துக்குமார சுவாமிக்கு சிறப்பு அபிஷேகம்",
+      "ரத சப்தமி — கண் நோய் தீர சூரிய வழிபாடு",
+      "ஞாயிறு அங்காரக பரிகார வழிபாடு — செவ்வாய் தோஷ நிவர்த்தி",
+      "ஆடிப்பூரம் — தையல்நாயகி அம்பாள் விழா",
+      "கார்த்திகை தீபம்"
+    ],
+
+    // ---------- Category B: Tagline ----------
+    sthala_purana_tagline_en:
+      "The temple of the divine physician — where Shiva as Vaidyanatha heals every ailment of body, mind, and karma.",
+    sthala_purana_tagline_ta:
+      "வைத்தியநாதப் பெருமான் உடல், மனம், வினை — அனைத்து நோய்களையும் தீர்க்கும் மருத்துவத் திருத்தலம்.",
+    // ---------- Category C: English sthala purana ----------
+    sthala_purana_en: `Vaitheeswaran Koil, ancient Pullirukkuvelur on the Cauvery delta plain of Nagapattinam district, is the great Shaiva healing shrine of Tamil Nadu — the place where Shiva himself takes the form of Vaidyanatha, the divine physician, and where every ailment of body, mind, and karma is said to find its cure. The temple's Tamil name, Vaitheeswaran (from Sanskrit Vaidya-Ishvara), literally means 'Lord of Medicine,' and pilgrims have travelled here for at least a thousand years carrying the illnesses of the world to the compassionate physician-god who waits inside the western-facing sanctum.
+
+The sthala purana braids together several strands. The oldest layer belongs to Rama and Sugriva. After the killing of the demon Jatayu, tradition holds that the great vulture-king was cremated on this soil by Rama himself, and the three pits (kundams) said to have been dug for the funerary rites — Rama Kundam, Lakshmana Kundam, and Jatayu Kundam — are still shown to pilgrims to this day. Pullirukkuvelur, the Tamil town-name, is unpacked as 'the town (velur) where the bird (pull) resided (irukku)' — the bird being Jatayu, whose devotion earned him moksha here.
+
+The second and dominant strand is the healing legend of Angaraka, the planet Mars. Angaraka, afflicted with a terrible skin disease that no other god could cure, undertook severe penance on this soil. Shiva appeared as Vaidyanatha, cured him, and granted him a permanent place beside himself as the presiding planetary lord of the temple. From this event Vaitheeswaran Koil became the principal parihara sthalam for Angaraka (Chevvai / Mars) dosha in the entire Navagraha circuit, and Tuesdays and Sundays draw enormous crowds of devotees seeking remedy for Mars-related afflictions — inflammatory illnesses, blood disorders, marital delays, and litigation troubles.
+
+A third strand centres on Sukra, the preceptor of the asuras. When Sukra's eye was pierced by Vamana's kusa grass during the Vamana avatara, he too came to this place. Shiva restored his sight, and Sukra installed the vimana over the sanctum. The four Vedas, personified, joined the consecration, and the vimana came to be called Vedha Vimana. This story is why the temple is regarded as sovereign for cures of eye ailments in particular, and why Ratha Saptami — the day of Surya's chariot — is celebrated here with unusual intensity.
+
+The presiding lingam is a swayambhu — self-manifest — and rises within the sanctum as a small, dark, unusually smooth stone. Beside it stands the goddess Thaiyalnayaki, also called Balambika, who holds a small silver kalasa of medicinal oil in her hand. Devotees receive a few drops of this oil, mixed daily with fresh medicinal herbs by the temple priests, as prasadam; the practice is one of the oldest continuous medicinal traditions in South Indian Hinduism. The temple also distributes tiny yellow cloth pouches of homam ash mixed with pepper, jaggery, and specific herbs — chandan tirtha and mrityunjaya vibhuti — which pilgrims carry home as protective medicine for the sick.
+
+The Muthukumara Swamy shrine, dedicated to Subrahmanya, occupies an unusually elevated position within the temple and is one of the most beloved child-deity shrines in the Tamil country. Muthukumara — 'the pearl-child' — is worshipped here as the divine infant who cured his own devotees of infertility, and Thai Poosam sees continuous abhishekam through the day.
+
+The Naalvar footprint at Vaitheeswaran Koil is deep. Sambandar sang two Thevaram padigams here, praising the Lord as 'Pullirukkuvelurudaiyar' — the master of Pullirukkuvelur; Appar's hymns dwell on the divine physician's compassion; and Sundarar sings of the town as a place of unfailing refuge. The temple is thus a Vaippu Sthalam by inclusion in all three Moovar bodies of the Thevaram, marking it firmly within the canonical 275 (later 276) Paadal Petra Sthalams. Manickavasakar's Thiruvasagam does not name Vaitheeswaran Koil, and the anchor recognises 3 of the 4 Naalvar.
+
+Architecturally the temple retains a Chola nucleus with substantial Vijayanagara and Nayaka additions. The current western-facing arrangement — unusual for a major Shiva temple — is preserved from the original layout. The seven-tiered eastern rajagopuram, the vast Siddhamrita tank flanked by pillared mandapas, and the wide inner prakaras with subsidiary shrines to the navagrahas, Bhairava, Chandikeswara, and Nataraja together form one of the most complete healing-oriented temple architectures anywhere in Tamil Nadu.
+
+Vaitheeswaran Koil is also world-famous today for a very different reason: it is one of the principal centres of Naadi Jyotisham, the palm-leaf astrology tradition in which ancient sages are believed to have inscribed predictions for individual souls thousands of years in advance. Pilgrims from across India and abroad come to consult these leaves, and the practice — while extra-canonical to the temple's Shaiva liturgy — has made the town internationally known.
+
+In the living devotion of Tamil Shaivas, Vaitheeswaran Koil remains what it has been for centuries: the last hospital, the merciful physician, the place where the incurable are cured.`,
+
+    // ---------- Category C: Distinctive features ----------
+    distinctive_features_en: [
+      "Principal Navagraha parihara sthalam for Angaraka (Mars) — the dominant Mars remedial temple in Tamil Nadu",
+      "Medicinal oil (thailam) prasadam prepared daily with fresh herbs — one of the oldest continuous medicinal traditions in South Indian temple practice",
+      "West-facing sanctum — unusual for a major Shiva temple, preserved from the original layout",
+      "Elevated Muthukumara Swamy (Subrahmanya) shrine — one of the most revered child-deity shrines in Tamil Nadu",
+      "Rama Kundam, Lakshmana Kundam, and Jatayu Kundam — the three ritual pits associated with Jatayu's last rites still shown to pilgrims",
+      "Global centre of Naadi Jyotisham (palm-leaf astrology) — draws international pilgrims year-round"
+    ],
+
+    // ---------- Category C: Unique note ----------
+    unique_note_en: "Vaitheeswaran Koil is unique among the 276 Paadal Petra Sthalams for the tangibility of its healing tradition. Unlike temples where healing is expressed only in myth, here the priests physically dispense medicinal oil, herbal ash pouches, and sanctified tirtham as remedies, and devotees consume them with expectation of physical cure. The temple thus preserves an unbroken chain of temple-centred medicine that predates modern Ayurveda's institutionalization by more than a thousand years.",
+
+    // ---------- Category C: Alwar note (cross-tradition) ----------
+    alwar_note_en: "Vaitheeswaran Koil is not a Divya Desam and does not appear in the Nalayira Divya Prabandham of the twelve Alwars. However, its Rama–Jatayu association makes it a place of deep interest for Sri Vaishnavas as well; pilgrims of both traditions honour the three kundams associated with Jatayu's last rites, and the town is remembered in Vaishnava tradition as the site where Rama performed the funerary rites for the great vulture-king.",    // ---------- Category D: Tamil sthala purana ----------
+    sthala_purana_ta: `நாகப்பட்டினம் மாவட்டத்தில் காவிரிக் கழிமுகச் சமவெளியில் அமைந்துள்ள வைத்தீஸ்வரன் கோயில், பண்டைக்காலத்திய புள்ளிருக்குவேளூர் என அழைக்கப்பட்டது. இது தமிழகத்தின் தலைசிறந்த சைவ மருத்துவத் திருத்தலமாகும். இங்கே சிவபெருமான் வைத்தியநாதப் பெருமான் என்னும் திருக்கோலத்தில் காட்சி தந்து, உடல் நோய், மனத் துயர், வினைத் தொல்லை என அனைத்தையும் தீர்ப்பதாக ஆயிரம் ஆண்டுகளுக்கும் மேலாக நம்பப்பட்டு வருகிறது. வைத்தீஸ்வரன் என்னும் திருநாமம் 'மருந்தின் இறைவன்' என்று பொருள்படும். மேற்கு நோக்கிய திருமூலத்தானத்தில் அமர்ந்திருக்கும் கருணை மிகுந்த வைத்தியப் பெருமானை நாடி, உலகின் நோய்களை சுமந்து பக்தர்கள் இங்கே வந்து செல்கிறார்கள்.
+
+இக்கோயிலின் தல புராணம் பல வழிகளில் பின்னிப் பிணைந்துள்ளது. இதன் மூத்த அடுக்கு ராமபிரானையும் ஜடாயுவையும் சார்ந்தது. இராவணனால் சிறகறுக்கப்பட்டு வீழ்ந்த ஜடாயுவின் இறுதிக் கிரியைகள் இத்தலத்திலேயே ராமபிரானால் நடத்தப்பட்டன என்பது ஐதீகம். அப்போது அமைக்கப்பட்ட மூன்று குண்டங்கள் — ராம குண்டம், லக்ஷ்மண குண்டம், ஜடாயு குண்டம் — இன்றும் யாத்திரிகர்களுக்குக் காட்டப்படுகின்றன. புள்ளிருக்குவேளூர் என்னும் தமிழ்ப் பெயர், 'புள் (பறவை) இருக்கு (தங்கிய) வேளூர் (திருத்தலம்)' என்று பிரிக்கப்படுகிறது — அப்பறவை ஜடாயுவே; அவனுடைய பக்தி காரணமாக அவனுக்கு இத்தலத்தில் மோட்சம் கிடைத்தது.
+
+இரண்டாவது, மேலான புராண இழை அங்காரகனுடையது — அதாவது செவ்வாய்க் கிரகம். மற்ற எந்தத் தெய்வத்தாலும் தீர்க்க முடியாத பயங்கரமான தோல் நோயால் அவதிப்பட்ட அங்காரகன் இத்தலத்தில் கடும் தவம் புரிந்தான். சிவபெருமான் வைத்தியநாதராக எழுந்தருளி அவனை நோய் நீக்கிக் காத்து, தன் அருகிலேயே கிரக நாயகனாக நிலைநிறுத்தினார். அன்று முதல், வைத்தீஸ்வரன் கோயில் நவகிரக மண்டலத்தில் அங்காரக (செவ்வாய்) தோஷ பரிகாரத்திற்கான முதன்மைத் தலமாகி விட்டது. செவ்வாய், ஞாயிற்றுக் கிழமைகளில் — வெப்ப நோய், ரத்தக் கோளாறு, திருமணத் தடை, வழக்கு-வம்பு போன்ற செவ்வாய் தோஷப் பாதிப்புகளை நீக்கிக் கொள்ள எண்ணற்ற பக்தர்கள் இங்கே கூடுகிறார்கள்.
+
+மூன்றாவது இழை சுக்கிரனுடையது — அசுர குருவாகிய சுக்கிரன், வாமன அவதாரத்தின்போது வாமனனின் தர்ப்பைப் புல்லால் கண் குருடானான். அவனும் இங்கே வந்து சிவனை வேண்டினான். இறைவன் அவனது கண்பார்வையை மீட்டுத் தந்தார்; நன்றியறிதலாக சுக்கிரன் திருமூலத்தான விமானத்தை நிறுவினான். நான்கு வேதங்களும் உருவெடுத்து இக்கும்பாபிஷேகத்தில் கலந்து கொண்டதால் இவ்விமானம் 'வேத விமானம்' எனப் பெயர் பெற்றது. இக்காரணத்தால் தான், கண் நோய்களைத் தீர்ப்பதில் இக்கோயில் தலைசிறந்ததாகக் கருதப்படுகிறது; சூரியனின் ரதத்தை நினைவுகூறும் ரத சப்தமி இங்கே சிறப்பாகக் கொண்டாடப்படுகிறது.
+
+திருமூலத்தான லிங்கம் ஒரு சுயம்பு — தானாகவே உதித்தது. கருங்கல் போலச் சிறியதாகவும், அதிசயமாக மென்மையாகவும் அது காட்சி தருகிறது. அதற்குப் பக்கத்தில் தையல்நாயகி — பாலாம்பிகை — சிறிய வெள்ளிக் கலசத்தில் மருந்து எண்ணெயை ஏந்தி நிற்கிறாள். ஒவ்வொரு நாளும் தேவையான மூலிகைகளுடன் புதிதாக அமைக்கப்படும் இந்த எண்ணெய், சில துளிகளாகப் பக்தர்களுக்கு பிரசாதமாக வழங்கப்படுகிறது. இது தென்னிந்திய ஆலய மருத்துவ மரபுகளில் இடையறாத மிகப் பழமையான மரபு. அத்துடன், மிளகு, வெல்லம், சந்தன தீர்த்தம் ஆகியவற்றுடன் கலந்த ஹோம விபூதி மஞ்சள் துணிப் பையில் கட்டப்பட்டு, நோய்க்கான காப்பு மருந்தாகப் பக்தர்களுக்கு அளிக்கப்படுகிறது.
+
+முத்துக்குமார சுவாமி சந்நிதி — சுப்பிரமணியப் பெருமானின் திருக்கோயில் — ஆலயத்தில் உயர்ந்த இடத்தில் அமைந்துள்ளது. தமிழகத்தின் மிக விரும்பப்படும் குழந்தை வடிவ முருகன் சந்நிதிகளில் இதுவும் ஒன்று. 'முத்துக்குமார' என்றால் 'முத்துக் குழந்தை' — குழந்தையின்மைத் துயர் நீக்கும் திருமகனாக இங்கே அவர் வழிபடப்படுகிறார். தைப்பூசம் முழுவதும் இடையறாத அபிஷேகம் நடைபெறுகிறது.
+
+நால்வரின் தேவார-திருவாசகப் பாடல்களில் வைத்தீஸ்வரன் கோயிலின் இடம் ஆழமானது. திருஞானசம்பந்தர் இரண்டு பதிகங்களில் இறைவனை 'புள்ளிருக்குவேளூருடையார்' என்று போற்றியுள்ளார்; திருநாவுக்கரசர் வைத்தியப் பெருமானின் கருணையையே நோக்கிப் பாடினார்; சுந்தரர் இத்தலத்தை 'சரணடையும் தலம்' என்று வர்ணித்தார். இதனால் இக்கோயில் மூவர் தேவாரம் மூன்றிலும் இடம் பெற்று, 275 (பின்னர் 276) பாடல் பெற்ற தலங்களில் நிலைத்திருக்கிறது. மாணிக்கவாசகரின் திருவாசகத்தில் இத்தலம் இடம் பெறவில்லை; ஆகவே, இக்கோயிலில் நால்வரில் மூவர் (சம்பந்தர், அப்பர், சுந்தரர்) என்று அடையாளப்படுத்தப்படுகிறது.
+
+கட்டிடக்கலை அடிப்படையில், சோழர்கால மையக் கருவறையை உள்ளடக்கி, விஜயநகர-நாயக்க கால கூடுதல் அமைப்புகளுடன் இக்கோயில் திகழ்கிறது. பெருங்கோயில்களிலேயே அரிதாகக் காணப்படும் மேற்கு நோக்கிய அமைப்பு இங்கே பழைய உருவமாகவே பாதுகாக்கப்பட்டுள்ளது. கிழக்கே ஏழு நிலை ராஜகோபுரம், அகன்ற சித்தாமிர்த தீர்த்தக் குளம், நவகிரகம், பைரவர், சண்டிகேசுவரர், நடராஜர் ஆகியோருக்கான உபசந்நிதிகள் — இவை அனைத்தும் சேர்ந்து தமிழகத்தின் மிக முழுமையான மருத்துவம் சார்ந்த ஆலயக் கட்டிடக்கலையாக இக்கோயிலை நிலைநிறுத்துகின்றன.
+
+வேறொரு காரணத்தினாலும் வைத்தீஸ்வரன் கோயில் இன்று உலகறியப்பட்டதாக ஆகியுள்ளது — நாடி ஜோதிடம். ஆயிரக்கணக்கான ஆண்டுகளுக்கு முன்னரே ரிஷிகளால் ஓவ்வொரு ஆத்மாவுக்கும் தனித்தனியாக ஏடுகளில் எழுதி வைக்கப்பட்ட எதிர்கால முன்னறிவிப்புகள் இங்கே பாதுகாக்கப்பட்டுள்ளதாக நம்பப்படுகிறது. இந்தியா முழுவதிலிருந்தும், வெளிநாடுகளிலிருந்தும் ஏடுகளைக் காண இங்கே பக்தர்கள் வருகிறார்கள். இது ஆலயத்தின் சைவப் பூஜா மரபுக்கு வெளியே இருந்தாலும், இத்தலத்தை உலகறியச் செய்துள்ளது.
+
+இன்றைய தமிழ் சைவப் பக்தர்களின் உயிர்த்துடிக்கும் நினைவில், வைத்தீஸ்வரன் கோயில் நூற்றாண்டுகளாக என்ன இருந்ததோ அதுவே ஆகியிருக்கிறது — கடைசி மருத்துவமனை, கருணை மிகுந்த மருத்துவன், தீர முடியாத நோய்களும் தீர்ந்து போகும் திருத்தலம்.`,
+
+    // ---------- Category D: Distinctive features (Tamil) ----------
+    distinctive_features_ta: [
+      "நவகிரகங்களில் அங்காரகன் (செவ்வாய்) தோஷ பரிகாரத்திற்கான முதன்மைத் தலம் — தமிழகத்தின் மிக முக்கியமான செவ்வாய் தோஷ நிவர்த்தி ஆலயம்",
+      "தினமும் புதிய மூலிகைகளுடன் தயாரிக்கப்படும் மருந்து எண்ணெய் பிரசாதம் — தென்னிந்திய ஆலய மருத்துவத்தில் இடையறாத பழமையான மரபு",
+      "மேற்கு நோக்கிய திருமூலத்தானம் — பெரிய சிவாலயங்களில் அரிதாகக் காணப்படும் அமைப்பு; பழைய கட்டமைப்பே பாதுகாக்கப்பட்டுள்ளது",
+      "உயரமான முத்துக்குமார சுவாமி சந்நிதி — தமிழகத்தின் தலைசிறந்த குழந்தை முருகன் சந்நிதிகளில் ஒன்று",
+      "ராம குண்டம், லக்ஷ்மண குண்டம், ஜடாயு குண்டம் — ஜடாயுவின் இறுதிக் கிரியை தொடர்பான மூன்று குண்டங்கள் இன்றும் காட்டப்படுகின்றன",
+      "நாடி ஜோதிடத்தின் உலக மையம் — உலகம் முழுவதிலிருந்தும் பக்தர்களை ஈர்க்கும் தலம்"
+    ],
+
+    // ---------- Category D: Unique note (Tamil) ----------
+    unique_note_ta: "276 பாடல் பெற்ற தலங்களில் வைத்தீஸ்வரன் கோயில் தனித்துவம் பெறுவது அதன் மருத்துவ மரபின் நிஜத் தன்மையால் ஆகும். மற்ற பல தலங்களில் மருத்துவம் என்பது புராணத்தில் மட்டுமே சொல்லப்படுகிறது; ஆனால் இங்கே மருந்து எண்ணெய், மூலிகை விபூதி, சித்தாமிர்த தீர்த்தம் — இவை உண்மையிலேயே பக்தர்களுக்கு வழங்கப்பட்டு, உடல் நோய் நீங்க அவை உட்கொள்ளப்படுகின்றன. ஆயுர்வேதம் நிறுவனமயப்படுத்தப்படுவதற்கு ஆயிரம் ஆண்டுகள் முன்பே இருந்த ஆலய மையக் கொண்ட மருத்துவ மரபை இக்கோயில் இடையறாது காத்து வருகிறது.",
+
+    // ---------- Category D: Alwar note (Tamil) ----------
+    alwar_note_ta: "வைத்தீஸ்வரன் கோயில் திவ்யதேசம் அல்ல; பன்னிரு ஆழ்வார்களின் நாலாயிர திவ்யப் பிரபந்தத்தில் இத்தலம் இடம் பெறவில்லை. இருப்பினும், ராமன்-ஜடாயு தொடர்பு காரணமாக இக்கோயில் ஸ்ரீவைஷ்ணவர்களுக்கும் ஆழ்ந்த முக்கியத்துவம் பெறுகிறது. ஜடாயுவின் இறுதிக் கிரியை தொடர்பான மூன்று குண்டங்களை இரு மரபுகளின் யாத்திரிகர்களும் போற்றி வழிபடுகின்றனர்; ராமபிரான் இப்பறவை அரசனுக்கு இறுதிச் சடங்கு நடத்திய தலமாக வைணவ மரபில் இத்தலம் நினைவுகூரப்படுகிறது.",    // ---------- Category E: Epigraphy ----------
+    epigraphy_note_en: "Vaitheeswaran Koil preserves a substantial corpus of Chola, Pandya, Vijayanagara, and Nayaka period inscriptions on its inner prakara walls and pillar bases. The earliest datable inscriptions belong to the reign of Rajaraja Chola I and Rajendra Chola I (late 10th–early 11th centuries CE), recording endowments of paddy fields, oil lamps, and cattle for the Vaidyanatha and Thaiyalnayaki sanctums. Vijayanagara-era records document the reconsecration of the Muthukumara Swamy shrine and the excavation of the Siddhamrita Theertham. Several Nayaka inscriptions record daily allocations for the medicinal-oil preparation ritual, providing rare epigraphic evidence for the continuity of the temple's healing tradition. Selected inscriptions are catalogued in South Indian Inscriptions (SII) Volume V and Volume XIII, with additional readings in the Annual Reports on Epigraphy of the Archaeological Survey of India.",
+    epigraphy_note_ta: "வைத்தீஸ்வரன் கோயிலின் உள் பிராகாரச் சுவர்கள் மற்றும் தூண் அடிகளில் சோழர், பாண்டியர், விஜயநகர, நாயக்க கால கல்வெட்டுகள் ஏராளமாக பாதுகாக்கப்பட்டுள்ளன. மிகப் பழமையான தேதியிட முடிந்த கல்வெட்டுகள் ராஜராஜ சோழன் மற்றும் ராஜேந்திர சோழனின் காலத்தை (பத்தாம் நூற்றாண்டின் இறுதியில் – பதினொன்றாம் நூற்றாண்டின் தொடக்கத்தில்) சேர்ந்தவை. இவை வைத்தியநாதர் மற்றும் தையல்நாயகி சந்நிதிகளுக்கு நெல் விளை நிலங்கள், விளக்கு எண்ணெய், பசுக்கள் ஆகியவை தானமாக அளிக்கப்பட்டதைப் பதிவு செய்கின்றன. விஜயநகர காலக் கல்வெட்டுகள் முத்துக்குமார சுவாமி சந்நிதியின் மறுகும்பாபிஷேகத்தையும், சித்தாமிர்த தீர்த்தத்தின் புதுப்பிப்பையும் ஆவணப்படுத்துகின்றன. நாயக்க காலக் கல்வெட்டுகள் மருந்து எண்ணெய் தயாரிப்பு தினசரி நடைபெறுவதற்கான ஒதுக்கீட்டைப் பதிவு செய்து, இக்கோயிலின் மருத்துவ மரபின் இடையறாத தொடர்ச்சிக்கு அரிய சான்றுகளாக அமைகின்றன. தேர்ந்தெடுக்கப்பட்ட கல்வெட்டுகள் தென்னிந்திய கல்வெட்டுகள் (SII) தொகுதி V மற்றும் XIII-இல் தொகுக்கப்பட்டுள்ளன.",
+
+    // ---------- Category E: Audio sources (Thevaram) ----------
+    audio_sources_en: [
+      {
+        title: "Thiruppullirukkuvelur — Sambandar Thevaram (Padigam 1)",
+        artist: "Traditional Oduvar rendition",
+        note: "First of two Sambandar padigams on Vaitheeswaran Koil; opens with 'Vetha Vithai Vitthagan' addressing the Lord as the master of Vedic wisdom.",
+        url_hint: "Search 'Thiruppullirukkuvelur Sambandar' on Thevaaram.org or Shaivam.org"
+      },
+      {
+        title: "Thiruppullirukkuvelur — Appar Thevaram",
+        artist: "Traditional Oduvar rendition",
+        note: "Appar's hymn dwelling on Vaidyanatha's compassion as the healer of chronic ailments.",
+        url_hint: "Search 'Thiruppullirukkuvelur Appar' on Thevaaram.org"
+      },
+      {
+        title: "Thiruppullirukkuvelur — Sundarar Thevaram",
+        artist: "Traditional Oduvar rendition",
+        note: "Sundarar praises Vaitheeswaran Koil as a place of unfailing refuge from karma and disease.",
+        url_hint: "Search 'Thiruppullirukkuvelur Sundarar' on Thevaaram.org"
+      }
+    ],
+    audio_sources_ta: [
+      {
+        title: "திருப்புள்ளிருக்குவேளூர் — சம்பந்தர் தேவாரம் (பதிகம் 1)",
+        artist: "மரபுவழி ஓதுவார் இசை",
+        note: "வைத்தீஸ்வரன் கோயில் மேல் திருஞானசம்பந்தர் பாடிய இரண்டு பதிகங்களில் முதலாவது; 'வேத விதை வித்தகன்' எனத் தொடங்கி இறைவனை வேதப் பொருளின் அறிஞனாகப் போற்றுகிறது.",
+        url_hint: "Thevaaram.org அல்லது Shaivam.org-இல் 'திருப்புள்ளிருக்குவேளூர் சம்பந்தர்' தேடுக"
+      },
+      {
+        title: "திருப்புள்ளிருக்குவேளூர் — அப்பர் தேவாரம்",
+        artist: "மரபுவழி ஓதுவார் இசை",
+        note: "நாள்பட்ட நோய்களைத் தீர்க்கும் வைத்தியநாதப் பெருமானின் கருணையை போற்றும் திருநாவுக்கரசரின் பதிகம்.",
+        url_hint: "Thevaaram.org-இல் 'திருப்புள்ளிருக்குவேளூர் அப்பர்' தேடுக"
+      },
+      {
+        title: "திருப்புள்ளிருக்குவேளூர் — சுந்தரர் தேவாரம்",
+        artist: "மரபுவழி ஓதுவார் இசை",
+        note: "வினை நோய்களிலிருந்து விடுதலை தரும் தலமாக வைத்தீஸ்வரன் கோயிலை சுந்தரர் புகழ்ந்து பாடுகிறார்.",
+        url_hint: "Thevaaram.org-இல் 'திருப்புள்ளிருக்குவேளூர் சுந்தரர்' தேடுக"
+      }
+    ],
+
+    // ---------- Coordinates verification flag ----------
+    coords_verified: true,
+    coords_source: "Session 0F verification — HIGH confidence, well-known temple with authoritative coordinates and district match confirmed"
+      // ---------- Naalvar presence (Sambandar, Appar, Sundarar; no Manickavasakar) ----------
+    naalvar_present: ["sambandar", "appar", "sundarar"],
+  },
